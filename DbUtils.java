@@ -65,7 +65,7 @@ public class DbUtils {
 		pstmt.setString(16, memberDto.getMonth());
 		pstmt.setString(17, memberDto.getDay());
 		
-		int result = pstmt.executeUpdate(); // result 에 insert한 데이터값 담음
+		int result = pstmt.executeUpdate(); // result 에 insert한 데이터값 담음 -> 값(행단위, 멤버당)에 변동이 있으면 1이 올라감
 		return result; // result 반환
 	}
 	
