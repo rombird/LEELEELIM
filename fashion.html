@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{margin:0; padding:0;}
+
+        .layout1{width:1280px; margin:0 auto;}
+        
+
+
+        /* header */
+        header>.topHeader{
+            width:35px;
+            border:1px solid'
+        }
+        header>.navHeader{
+            display:flex;
+            height:80px;
+            border:1px solid;
+            
+        }
+
+        header>.navHeader>.wrap>.mainNav{
+            display:flex;
+        }
+        header>.navHeader>.wrap>.mainNav>.mainList{
+            /* height: 80px; */
+        }
+        
+        header>.navHeader>.wrap>.mainNav>.mainList>.mainMenu{
+            width:150px;
+            /* height:80px; */
+            line-height:80px;
+            font-size:18px;
+            margin: 0 20px;
+            border:1px solid;
+        }
+        header>.navHeader>.wrap>.mainNav>.mainList>ul.subNav{
+            display:none;
+            border:1px solid; 
+        }
+        
+        header>.navHeader>.wrap>.mainNav>.mainList:hover+.subNav{
+            display:block; 
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="topHeader">
+
+            </div>
+            <div class="navHeader .layout1">
+                <h1><a href="javascript:void(0)">FashionLLL</a></h1>
+                <div class="wrap">
+                    <ul class="mainNav">
+                        <li class="mainList">
+                            <a class=mainMenu href="javascript:void(0)">INSIGHT</a>
+                            <ul class="subNav">
+                                <li class="subList">
+                                    <a href="javascript:void(0)">패션키워드 검색</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">라이프스타일</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">지속가능성</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mainList">
+                            <a class=mainMenu href="javascript:void(0)">TREND</a>
+                            <!-- <ul class="subNav">
+                                <li>
+                                    <a href="javascript:void(0)">Trend NOW</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Trend Forecast</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">3D Design</a>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li class="mainList">
+                            <a class=mainMenu href="javascript:void(0)">MARKETING</a>
+                            <!-- <ul class="subNav">
+                                <li>
+                                    <a href="javascript:void(0)">소비트렌드 분석</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">글로벌 이슈</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">마케팅 전략</a>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li class="mainList">
+                            <a class=mainMenu href="javascript:void(0)">AI-FASHIONTECH</a>
+                            <!-- <ul class="subNav">
+                                <li>
+                                    <a href="javascript:void(0)">AI-FASHIONTECH</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">패션 소비현황</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">패션브랜드</a>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li class="mainList">
+                            <a class=mainMenu href="javascript:void(0)">NEWS</a>
+                            <!-- <ul class="subNav">
+                                <li>
+                                    <a href="javascript:void(0)">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">캘린더</a>
+                                </li>
+                            </ul> -->
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main></main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
