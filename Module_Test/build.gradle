@@ -1,0 +1,70 @@
+plugins {
+	id 'java'
+	id 'war'
+	id 'org.springframework.boot' version '3.4.5'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	//providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	//JSP
+    // JSP 컴파일러 포함 내장 톰캣
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:11.0.10' // 추가
+
+	//JSTL
+	implementation 'jakarta.servlet:jakarta.servlet-api' //스프링부트 3.0 이상
+	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
+	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
+
+    //JSP EL PARSER
+    // El같은 (${})같은 JPS관련 언어  쓸 수 있게 해줌
+    implementation 'jakarta.el:jakarta.el-api:6.0.1'
+
+	// VALIDATION - ADD
+    // 입력값 검증용 라이브러리
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	//DATABASE - ADD
+    // Spring JDBC 사용을 위한 기본 라이브러리
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    // MySQL에 접속하기 위한 JDBC 드라이버, Spring이 DB에 연결될 때 필수
+    runtimeOnly 'com.mysql:mysql-connector-j'
+    // DB Connection Pool 관리 라이브러리
+    implementation 'org.apache.commons:commons-dbcp2:2.13.0'
+
+	//JPA - ADD
+    // JPA/Hibernate 기반 ORM 기능 제공, Entity와 DB 테이블 매핑
+    // JPA: Java Persistenc API -> 자바 객체를 DB에 저장하거나 DB에서 불러오는 규칙/표준
+    // Hibernate: JPA 표준을 구현한 실제 라이브러리
+    // Entity: DB에 저장하고 싶은 자바 클래스지정
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
