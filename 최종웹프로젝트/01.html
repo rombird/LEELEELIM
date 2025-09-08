@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./02.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top-header"></div>
+            <nav></nav>
+        </header>
+        <main>
+            <section>
+                <div class="wrap">
+                    <div class="trend">
+                        <h2>소비트렌드분석[DATA]</h2>
+                        <p></p>
+                    </div>
+                    <ul class="sub_menu">
+                        <li class="dashboard">
+                            <a href="">
+                                대시보드
+                            </a>
+                        </li>
+                        <li class="report">
+                            <a href="">
+                                리포트
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="dashboard_content">
+                        <div class="consumer_trend">
+                            <ul class="guide">
+                                <li>
+                                    BC 카드의 카드 사용 데이터를 연동하여 패션 섬유 소비 트렌드 대시보드를 제공합니다.
+                                </li>
+                                <li>
+                                    최신 데이터가 1개월 기준으로 업데이트 됩니다.
+                                </li>
+                            </ul>
+                            <div class="box01">
+                                <div class="01title">
+                                    <h3>패션 섬유 소비 트렌드</h3>
+                                    <div class="01select">
+                                        <div class="01option">
+                                            <label for="">년월</label>
+                                            <select name="" id="">
+                                                <option value="">2025년 5월</option>
+                                                <option value="">2025년 4월</option>
+                                                <option value="">2025년 3월</option>
+                                                <option value="">2025년 2월</option>
+                                                <option value="">2025년 1월</option>
+                                                <option value="">2024년 12월</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="charts01">
+                                    <!-- 온라인 차트 -->
+                                    <div class="chart-box">
+                                        <div class="chart-header">
+                                            <div class="title-left">
+                                                <h4 class="yearmonth-total">2025년 5월</h4>
+                                                <h3 class="total_amount">온라인 총 이용금액</h3>
+                                            </div>
+                                            <div class="amount-detail">55,641백만원</div>
+                                        </div>
+                                        <div class="chart-area">
+                                            <canvas id="onlineChart"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <!-- 오프라인 차트 -->
+                                    <div class="chart-box">
+                                        <div class="chart-header">
+                                            <div class="title-left">
+                                                <h4 class="yearmonth-total">2025년 5월</h4>
+                                                <h3 class="total_amount">오프라인 총 이용금액</h3>
+                                            </div>
+                                            <div class="amount-detail">160,671백만원</div>
+                                        </div>
+                                        <div class="chart-area">
+                                            <canvas id="offlineChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+
+    <script src="./03.js"></script>
+</body>
