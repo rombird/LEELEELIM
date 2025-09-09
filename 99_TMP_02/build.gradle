@@ -25,29 +25,32 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
+	implementation 'org.springframework.boot:spring-boot-starter-web' // Spring Web
+	compileOnly 'org.projectlombok:lombok' // lombok
+	annotationProcessor 'org.projectlombok:lombok' // lombok
 	//providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test' // lombok
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher' // lombok
 
 	//JSP
-    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:11.0.10' // 추가
+    //JSP 컴파일러 포함 내장 톰캣
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:11.0.10' // 추가 - maven repository 에서 tomcat embed jsaper
 
 	//JSTL
 	implementation 'jakarta.servlet:jakarta.servlet-api' //스프링부트 3.0 이상
 	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
 	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
 
+    implementation 'jakarta.el:jakarta.el-api:6.0.1' // jakarta Expression Language API - JPS 관련 언어 사용가능
+
 	// VALIDATION - ADD
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-validation' // 입력값 검증용 라이브러리
 	//DATABASE - ADD
-    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
-    runtimeOnly 'com.mysql:mysql-connector-j'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc' // MySQL Driver
+    runtimeOnly 'com.mysql:mysql-connector-j' // MySQL Driver
     implementation 'org.apache.commons:commons-dbcp2:2.13.0'
 	//JPA - ADD
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa' // JPA 활성화시 필요한 의존성 추가
 
 }
 

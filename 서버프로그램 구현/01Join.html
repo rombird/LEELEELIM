@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* common */
+        * {
+            font-size: 0.9rem;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn {
+            border: 1px solid gray;
+            min-width: 80px;
+            height: 100%;
+            line-height: 35px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: royalblue;
+            color: white;
+            border: 0;
+        }
+
+
+        /* form */
+        form {
+            width: 380px;
+            border: 1px solid;
+            margin: 50px auto;
+        }
+
+        form>.row {
+            margin: 10px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 5px;
+            height: 35px;
+        }
+
+        form>.row>label {
+            display: block;
+            min-width: 85px;
+            height: 100%;
+            line-height: 35px;
+            /* border : 1px solid; */
+        }
+
+        form>.row>input[type="text"],
+        form>.row>input[type="password"],
+        form>.row>select {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border-radius: 0;
+            border: 1px solid gray;
+        }
+
+
+        .top-header {
+            height: 15px !important;
+            background-color: black !important;
+        }
+
+        .title {
+            margin-bottom: 25px !important;
+
+        }
+
+        .title>h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 5px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <!-- form에 입력된 내용을 02join.jsp로 보내기 -->
+    <form action="./02Join.jsp" method="post">
+        <div class="row top-header">
+
+        </div>
+        <div class="row title">
+            <h1>회원가입</h1>
+        </div>
+        <div class="row">
+            <label>아이디</label>
+            <input name="userid" type="text" placeholder="아이디를 입력하세요" required />
+            <a class="btn" href="javascript:void(0)">중복확인</a>
+        </div>
+        <div class="row">
+            <label>비밀번호</label>
+            <input name="password" type="password"  required />
+        </div>
+        <div class="row">
+            <label>비밀번호 확인</label>
+            <!-- 
+                disabled : 서버전송 대상에서 제외 , 입력불가
+                readonly : 서버전송 대상에 포함 , 입력불가
+            -->
+            <input name="rePassword" type="password" />
+        </div>
+        <div class="row">
+            <label>이름</label>
+            <input name="username" type="text" />
+        </div>
+        <div class="row">
+            <label>우편번호</label>
+            <input name="zipcode" type="text" />
+            <a class="btn" href="javascript:void(0)">검색</a>
+        </div>
+        <div class="row">
+            <label>기본주소</label>
+            <input name="addr1" type="text" />
+        </div>
+        <div class="row">
+            <label>상세주소</label>
+            <input name="addr2" type="text" />
+        </div>
+        <div class="row">
+            <label>휴대전화</label>
+            <select name="phone1">
+                <option value="010" selected>010</option>
+                <option value="011">011</option>
+            </select>
+            <input name="phone2" type="text" pattern="[0-9]{3,4}" oninvalid="this.setCustomValidity('0-9까지의 숫자만 입력해야합니다')" />
+            <input name="phone3" type="text" />
+        </div>
+        <div class="row">
+            <label>연락처</label>
+            <select name="tel1">
+                <option  value="053" selected>053</option>
+                <option " value="055">055</option>
+                <option value="02">02</option>
+            </select>
+            <input type="text" name="tel2" />
+            <input type="text" name="tel3"/>
+        </div>
+<!--         <div class="row">
+            <label>이메일</label>
+            <input type="text" />
+            <select>
+                <option value="" selected>@naver.com</option>
+                <option value="">@outlook.co.kr</option>
+                <option value="">@google.com</option>
+            </select>
+        </div> -->
+        <div class="row">
+            <label>이메일2</label>
+            <input type="email"  name="email" />
+        </div>
+        <div class="row">
+            <label>생년월일</label>
+            <input name="birth" type="radio" /> 양
+            <input name="birth" type="radio" /> 음
+        </div>
+
+        <div class="row">
+            <select name="year">
+                <option value="2025" selected>2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+            </select>
+            <select name=month>
+                <option value="12" selected>12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+            </select>
+            <select name="day">
+                <option value="01" selected>01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+            </select>
+        </div>
+        <hr />
+        <div class="row">
+            <input id="email-recv" type="checkbox" />
+            <label for="email-recv">이메일 수신에 동의합니다.</label>
+        </div>
+        <div class="row">
+            <input id="sms-recv" type="checkbox" />
+            <label for="sms-recv">문자메시지 수신에 동의합니다.</label>
+        </div>
+        <div class="row">
+            <input class="btn btn-submit" type="submit" value="회원가입" />
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
