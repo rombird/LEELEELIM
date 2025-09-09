@@ -19,7 +19,7 @@ public class MemoDto {
 	@NotBlank(message="메모를 입력하세요")  // text에 들어온게 없다면 메모를 입력하세요
 	private String text;
 	@NotBlank(message="작성자를 입력하세요")  // writer에 들어온게 없다면 작성자를 입력하세요
-	@Email(message="example@example.com에 맞게 입력해주세요")
+	@Email(message="example@example.com에 맞게 입력해주세요")    // EMAIL양식에 맞게 작성해주세요
 	private String writer;
 
 

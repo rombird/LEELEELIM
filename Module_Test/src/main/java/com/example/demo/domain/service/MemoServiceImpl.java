@@ -28,13 +28,16 @@ public class MemoServiceImpl implements MemoService {
     public Long addMemoTx(MemoDto dto) throws Exception{
         log.info("MemoService's addMemoTx2 Call!");
         //코드 완성
+        // Dto의 값을 Entity(DB 저장/ 작업용)로 바꾸는 작업
         Memo memo = Memo.builder()
                         .id(null)
                 .text(dto.getText())
                 .writer(dto.getWriter())
                 .createAt(LocalDateTime.now())
                 .build();
-        memoRepository.save(memo);
+        memoRepository.save(memo);  // memo에 담긴것들 저장
+                                    // memoRepository는 JpaRepository를 상속받았기때문에
+                                    // DB에 CRUD 가능
         return memo.getId();
     }
 }
