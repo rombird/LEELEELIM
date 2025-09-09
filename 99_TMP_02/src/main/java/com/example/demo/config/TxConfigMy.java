@@ -8,18 +8,21 @@
 //
 //import javax.sql.DataSource;
 //
-//@Configuration
+//@Configuration // @Bean 정의된 클래스에서 사용하는 Annotation
 //public class TxConfigMy {
 //
-//    @Autowired
+//    @Autowired // 의존성 객체 주입받기 위해 사용하는 Annotation
 //    private DataSource dataSource;
 //
-//    @Bean(name="jpaTransactionManager") // 트랜잭션을 위한 빈의 이름
+//    @Bean(name="jpaTransactionManager") // 빈생성(트랜잭션을 위한 bean의 이름)
 //    public JpaTransactionManager jpaTransactionManager(EntityManagerFactory entityManagerFactory) {
-//        //트랜잭션 기본 코드 작성
-//        JpaTransactionManager transactionManager = new JpaTransactionManager();
-//        transactionManager.setEntityManagerFactory(entityManagerFactory);
-//        transactionManager.setDataSource(dataSource);
+//        // entityManagerFactory를 의존 주입 - JPA를 사용하기 위해
+//        // JpaTransactionManager 생성, DB작업을 하나의 트랜잭션 단위로 묶음
+//
+// 트랜잭션 기본 코드 작성
+//        JpaTransactionManager transactionManager = new JpaTransactionManager(); // 트랜잭션 매니저 객체 생성
+//        transactionManager.setEntityManagerFactory(entityManagerFactory); // 트랜잭션 매니저 EntityManagerFactory 인스턴스 참조하여 JPA 관련 트랜 잭션 처리
+//        transactionManager.setDataSource(dataSource); // dataSource 참조
 //        return transactionManager;
 //    }
 //
