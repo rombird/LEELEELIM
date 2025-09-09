@@ -15,7 +15,7 @@ public class GlobalExceptionHandler {
 	public String AllExceptionExceptionHandler(Exception e, Model model) {
 		log.info("GlobalExceptionHandler's error : " + e);
         //예외발생시 webapp/WEB-INF/views/except/error.jsp로 이동합니다
-		return "except:error";
+		return "except/error";
 	}
 }
 
