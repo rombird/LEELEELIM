@@ -1,0 +1,88 @@
+.wrapper>main{
+    padding: 76px 38px 130px;
+}
+
+.TrendForecast{
+    /* main의 제일 위에 적힌 TrendForecast */
+    font-weight: bold;
+
+    font-size: 55px;
+
+    margin-bottom: 30px;
+}
+
+
+/* 총 X개, season, sort가 있는 공간 */
+.list_t_area{
+    /* background-color: rgb(193, 193, 218); */
+    margin: 30px 0 ;
+    
+}
+
+.list_t_area>.w_box{
+        
+    display: flex;
+
+}
+.list_t_area>.w_box>.count{
+    margin-right: 20px;
+}
+.list_t_area>.w_box>.season_select_box{
+    border: 0;
+}
+
+.list_t_area>.w_box>.sort{
+    /* background-color: brown; */
+    margin-left: auto;
+    
+}
+.sort>span{
+    margin-right: 10px;
+}
+.list_t_area>.w_box>.sort>.sort_select_box{
+    /* sort 옆의 select box */
+    border: 0;
+
+}
+
+.pagination{
+    /* 1페이지 2페이지 선택버튼 있는 공간 */
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 60px;
+    
+}
+
+.pagination>span>a{
+    /* 1, 2 페이지 버튼들 */
+    
+    display: inline-block;
+    
+    text-align: center;
+    line-height: 37px;
+
+    text-decoration: none;
+    
+    color: black;
+
+    width: 37px;
+    height: 37px;
+
+    margin: 0 5px;
+
+    font-size: 14px;
+}
+.pagination>span>a.active{
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+
+}
+
+.nav-tabs .nav-link{
+    color: rgb(121, 116, 116)
+}
+
+
