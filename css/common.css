@@ -60,7 +60,7 @@ body {
 
 .fashion .navHeader{
     height: 80px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #647FBC;
 }
 .fashion .navHeader>.detailnav {
     display: flex;

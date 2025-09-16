@@ -58,10 +58,9 @@
         <header class="">
             <div class="topHeader">
                 <ul class="top layoutCenter">
-                    <li class="mainSide">부트스트랩추가</li>
+                    <li class="mainSide">뭘 넣어야 잘 넣었다고 소문이 날까</li>
                     <li class="side"><a class="onair" href="javascript:void(0)">ONAIR</a></li>
-                    <li class="side"><a class="search" href="javascript:void(0)"><img class="imgSearch"
-                                src="image/돋보기.svg" alt=""></a></li>
+                    
                     <li class="side"><a class="login" href="javascript:void(0)"><img class="imgLogin"
                                 src="image/person.svg" alt="">로그인</a></li>
                 </ul>
@@ -145,33 +144,21 @@
         </header>
 
         <main class="">
-            <div class="mainBanner">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="./image/banner1.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img src="./image/banner2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./image/banner3.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./image/banner4.jpg" class="d-block w-100" alt="...">
+            <div class="mainBanner layoutCenter">
+                <div class="mainSearch">
+                    <div class="searchBox">
+                        <div class="search">
+                            <select name="langDiv" id="lang">
+                                <option value="kor" data-lang="한국어">한국어</option>
+                                <option value="eng" data-lang="영어">영어</option>
+                                <option value="jp" data-lang="일본어">일어</option>
+                            </select>
+                            <input id="title" type="text" placeholder="검색어를 입력하세요." style="outline:none;">
+                            <button type="button" id="searchBtn">검색</button>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
+                <div class="mainLayout"></div>
             </div>
             <div class="subMain layoutCenter">
                 <div class="join">
