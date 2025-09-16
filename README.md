@@ -1,3 +1,3 @@
-# BIGDATAUI_TEAMPJ
----
-## 08/07 응용SW기초기술활용 평가
+# 메인 페이지 디자인 
+## color 
+## font
