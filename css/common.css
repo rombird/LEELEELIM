@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layoutCenter{
+    width:1280px;
+    margin:0 auto;
+}
+
+
+ /* header */
+
+.fashion .topHeader {
+    /* width:1280px; */
+    height: 35px;
+    background-color:#f7f7f7;
+    /* border: 1px solid; */
+    
+}
+.fashion .topHeader>.top{
+    display:flex;
+    height:32px;
+    
+}
+.fashion .topHeader>.top>.mainSide{
+    border:1px solid;
+    width:700px;
+    margin-left:200px;
+}
+.fashion .topHeader>.top>.side>.onair{
+    margin:0 10px;
+    line-height:30px;
+}
+.fashion .topHeader>.top>.side>.login{
+    margin:0 10px;
+    /* line-height:30px; */
+}
+
+.fashion .topHeader>.top>.side>.search>.imgSearch{
+    margin:5px;
+}
+.fashion .topHeader>.top>.side>.login>.imgLogin{
+    margin:5px;
+}
+
+.fashion .navHeader{
+    height: 80px;
+    border-bottom: 1px solid #647FBC;
+}
+.fashion .navHeader>.detailnav {
+    display: flex;
+    
+}
+.fashion .navHeader>.detailnav>h1{
+    margin:0 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.fashion .navHeader>.detailnav>.wrap>.mainNav {
+    display: flex;
+}
+
+.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList {
+   
+}
+
+.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList>.mainMenu {
+    width: 150px;
+    /* height:80px; */
+    line-height: 80px;
+    font-size: 18px;
+    margin: 0 30px;
+    
+}
+.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList a{
+    
+}
+.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList>ul.subNav {
+    display: none;
+    /* border: 1px solid; */
+}
+
+.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList:hover+.subNav {
+    display: block;
+}
+/* main */
+/* main{
+    min-height:500px;
+} */
+/* footer */
+.fashion>footer{
+    background-color:#f7f7f7;
+    height:300px;
+    
+}
+.fashion .mainFooter{
+    /* border:1px solid; */
+    padding: 20px;
+    /* 여기서 마진 잡으면 X */
+}
+.fashion .mainFooter>.footerLogo>h1{
+    margin:20px;
+}
+.fashion .mainFooter>.footerInfo{
+    display:flex;
+}
+.fashion .mainFooter>.footerInfo>.footerInfoL{
+    
+    margin:20px;
+}
+.fashion .mainFooter>.footerInfo>.footerInfoL>p{
+    width:700px;
+    padding:0;
+    margin:0 100px 0 0;
+   
+}
+.fashion .mainFooter>.footerInfo>.footerInfoR{
+    width:400px;
+    margin:20px 0;
+    
+    display:flex;
+}
+.fashion .mainFooter>.footerInfo>.footerInfoR>.site{
+    border-right:1px solid lightgray;
+    margin-right:10px;
+    width:90px;
+}
+.fashion .mainFooter>.footerInfo>.footerInfoR>.related{
+    border-right:1px solid lightgray;
+    margin:0 10px;
+    width:110px;
+}
+.fashion .mainFooter>.footerInfo>.footerInfoR>.personInfo{
+    margin:0 10px;
+    width:150px;
+}
