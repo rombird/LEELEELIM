@@ -1,0 +1,115 @@
+.fashion .mainBanner{
+    /* height:680px; */
+    /* border:1px solid; */
+}
+.fashion .subMain>.join{
+    height:430px;
+    background-color:rgb(234, 234, 234);
+    margin:0 33px;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.fashion .subMain>.join>.joinBox{
+    border:1px solid;
+    border-radius:8px;
+    width:600px;
+    height:300px;
+    padding:30px 40px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    
+}
+.fashion .subMain>.join>.joinBox>h2{
+    margin:15px 0;
+    padding-bottom:30px;
+}
+.fashion .subMain>.join>.joinBox>.joinBtn{
+    border-radius:10px;
+    border:1px solid;
+    width:230px;
+    height:65px;
+    margin:130px;
+    padding:15px;
+    font-size:20px;
+}
+.fashion .subMain>.join>.joinBox p{
+    margin:40px;
+}
+.fashion .subMain>.weather{
+    height:635px;
+    /* border:1px solid; */
+}
+.fashion .subMain>.weather>h2{
+    margin:20px 0 0 30px;
+}
+.fashion .subMain>.weather>.weatherContent{
+    display:flex;
+    margin:25px 30px 0 30px;;
+    /* border:1px solid; */
+    height:530px;
+}
+.fashion .subMain>.weather>.weatherContent>.wcl{
+    width:600px;
+    background-color: rgb(234, 234, 234);
+    margin-right:60px;
+}
+.fashion .subMain>.weather>.weatherContent>.wcr{
+    width:550px;
+    background-color: rgb(234, 234, 234);
+}
+.fashion .subMain>.issue{
+    height:780px;
+    /* border:1px solid; */
+}
+.fashion .subMain>.issue>h2{
+    margin: 20px 0 0 30px;
+}
+.fashion .subMain>.issue>.issueBoxes{
+    margin:20px;
+    /* border:1px solid; */
+}
+.fashion .subMain>.issue>.issueBoxes>.card{
+    width:300px;
+    height:380px;
+    margin:10px;
+}
+.fashion .subMain>.issue>.issueBoxes>.card>.card-img-top{
+    height:250px;
+    /* width:280px; */
+    background-color:rgb(234, 234, 234);
+}
+.fashion .subMain>.trend{
+    height:830px;
+    /* border:1px solid; */
+}
+.fashion .subMain>.trend>h2{
+    margin: 20px 0 0 30px;
+}
+.fashion .subMain>.trend>.trendContent{
+    display:flex;
+}
+.fashion .subMain>.trend>.trendContent>.trendGraph{
+    height:660px;
+    width:780px;
+    background-color:rgb(234, 234, 234);
+    margin:25px;
+}
+.fashion .subMain>.trend>.trendContent>.trendChart{
+    width:400px;
+    height:660px;
+    background-color:rgb(234, 234, 234);
+    margin:25px;
+}
+.fashion .subMain>.board{
+    height:466px;
+}
+.fashion .subMain>.board>.boardInfo>h2{
+    margin: 20px 0 0 30px;
+}
+.fashion .subMain>.board>.boardInfo>.boardTable{
+    margin:25px;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./additional_information_header.css">
+    <link rel="stylesheet" href="./additional_information_main.css">
+    <link rel="stylesheet" href="./additional_information_footer.css">
+
+
+    <!-- 부트스트랩 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+        <div class="box">
+            <h1>FASHIONNET</h1>
+            <h2>패션넷 회원가입</h2>
+            <ul class="step">
+                <li class="on">
+                    <em class="done">1</em>
+                    회원인증
+                </li>
+                <li class="on">
+                    <em class="done">2</em>
+                    회원정보
+                </li>
+                <li class="on">
+                    <em class="active">3</em>
+                    부가정보
+                </li>
+            </ul>
+            <div class="join-greeting">
+                <b>${username}</b>님
+                회원가입을 환영합니다
+            </div>
+            <div class="provide-points">
+                <b>
+                    부가정보 입력시 1,000Point 제공
+                </b>
+                <p>
+                    부가정보 입력후 세미나/교육을 편리하게 신청할 수 있습니다.
+                </p>
+                *최초 1회만 제공 가능합니다
+            </div>
+            <form class="additional-information-form" method="post">
+                <dl>
+                    <dt>학과(부서)</dt>
+                    <dd>
+                        <input type="text" name="major">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>브랜드명(전공)</dt>
+                    <dd>
+                        <input type="email" name="brandName">
+                    </dd>
+                </dl>
+                <div class="line"></div>
+
+                <!-- 첫 번째 체크구간(소속유형) -->
+                <dl class="typeOfAffiliationDl">
+                    <dt>소속유형</dt>
+                    <dd class="typeOfAffiliationRadios">
+                        <label for="personal-business">
+                            <input type="radio" name="typeOfAffiliationRadios" id="personal-business"
+                                value="personal-business">
+                            개인사업자
+                        </label>
+                        <label for="smallCompany">
+                            <input type="radio" name="typeOfAffiliationRadios" id="smallCompany"
+                                value="smallCompany">
+                            중소/중견기업
+                        </label>
+                        <label for="majorCompany">
+                            <input type="radio" name="typeOfAffiliationRadios" id="majorCompany"
+                                value="majorCompany">
+                            대기업
+                        </label>
+                        <label for="school">
+                            <input type="radio" name="typeOfAffiliationRadios" id="school" value="school">
+                            학교
+                        </label>
+
+                        <label for="association">
+                            <input type="radio" name="typeOfAffiliationRadios" id="association" value="association">
+                            협회/단체
+                        </label>
+                        <label for="etc">
+                            <input class = "etcRadio" type="radio" name="typeOfAffiliationRadios" id="etc" value="etc">기타
+                            <input class="etcInput" type="text" name="etcInput" disabled>
+                        </label>
+                    </dd>
+                </dl>
+
+                <!-- 두 번째 체크 구간(직위직책) -->
+                <dl class="positionDl">
+                    <dt>직위직책</dt>
+                    <dd class="positionRadios">
+                        <label for="PIC">
+                            <input type="radio" name="positionRadios" id="practicalWorker" value="practicalWorker">
+                            실무자(사원, 대리, 과장, 차장급)
+                        </label>
+                        <label for="pic">
+                            <input type="radio" name="positionRadios" id="pic" value="pic">
+                            책임자(팀장, 부장, 실장금)
+                        </label>
+
+                        <label for="management">
+                            <input type="radio" name="positionRadios" id="management" value="management">
+                            경영진(이사, 전무, 상무, 사장, 대표 등 임원급)
+                        </label>
+                        <label for="researcher">
+                            <input type="radio" name="positionRadios" id="researcher" value="researcher">
+                            교수 연구직
+                        </label>
+
+                        <label for="etc">
+                            <input class = "etcRadio" type="radio" name="positionRadios" id="etc" value="etc">기타
+                            <input class="etcInput" type="text" name="etcInput" disabled>
+                        </label>
+                    </dd>
+                </dl>
+
+                <!-- 세 번째 체크구간(주요 담당업무) -->
+                <dl class="mainResponsibilityDl">
+                    <dt>주요 담당업무</dt>
+                    <dd class="mainResponsibilityRadios">
+                        <label for="design">
+                            <input type="radio" name="mainResponsibilityRadios" id="design" value="design">
+                            디자인
+                        </label>
+                        <label for="planningAndProduct">
+                            <input type="radio" name="mainResponsibilityRadios" id="planningAndProduct" value="planningAndProduct">
+                            기획/생산
+                        </label>
+                        <label for="buyer">
+                            <input type="radio" name="mainResponsibilityRadios" id="buyer" value="buyer">
+                            사입(바이어)
+                        </label>
+                        <label for="distribution">
+                            <input type="radio" name="mainResponsibilityRadios" id="distribution" value="distribution">
+                            유통
+                        </label>
+
+                        <label for="marketing">
+                            <input type="radio" name="mainResponsibilityRadios" id="marketing" value="marketing">
+                            마케팅/홍보
+                        </label>
+                        <label for="RAndD">
+                            <input type="radio" name="mainResponsibilityRadios" id="RAndD" value="RAndD">
+                            R&D
+                        </label>
+                        <label for="sale">
+                            <input type="radio" name="mainResponsibilityRadios" id="sale" value="sale">
+                            판매/영업
+                        </label>
+                        <label for="education">
+                            <input type="radio" name="mainResponsibilityRadios" id="education" value="education">
+                            교육
+                        </label>
+
+                        <label for="etc">
+                            <input class = "etcRadio" type="radio" name="mainResponsibilityRadios" id="etc" value="etc">기타
+                            <input class="etcInput" type="text" name="etcInput" disabled>
+                        </label>
+                    </dd>
+                </dl>
+
+                <!-- 네 번째 체크구간(회사 업종) -->
+                <dl class="typeOfCompanyDl">
+                    <dt>회사 업종</dt>
+                    <dd class="typeOfCompanyRadios">
+                        <label for="clothes">
+                            <input type="radio" name="typeOfCompanyRadios" id="clothes" value="clothes">
+                            의류 및 잡화(가방, 모자 등)
+                        </label>
+                        <label for="fiber">
+                            <input type="radio" name="typeOfCompanyRadios" id="fiber" value="fiber">
+                            섬유
+                        </label>
+                        <label for="cosmetic">
+                            <input type="radio" name="typeOfCompanyRadios" id="cosmetic" value="cosmetic">
+                            화장품/미용
+                        </label>
+                        <label for="jewelry">
+                            <input type="radio" name="typeOfCompanyRadios" id="jewelry" value="jewelry">
+                            쥬얼리
+                        </label>
+
+                        <label for="interiorAndArchitecture">
+                            <input type="radio" name="typeOfCompanyRadios" id="interiorAndArchitecture" value="interiorAndArchitecture">
+                            인테리어/건축
+                        </label>
+                        <label for="colorAndDesign">
+                            <input type="radio" name="typeOfCompanyRadios" id="colorAndDesign" value="colorAndDesign">
+                            컬러/디자인
+                        </label>
+                        <label for="school">
+                            <input type="radio" name="typeOfCompanyRadios" id="school" value="school">
+                            학교
+                        </label>
+
+                        <label for="etc">
+                            <input class = "etcRadio" type="radio" name="typeOfCompanyRadios" id="etc" value="etc">기타
+                            <input class="etcInput" type="text" name="etcInput" disabled>
+                        </label>
+                    </dd>
+                </dl>
+
+
+                <div class="line"></div>
+                <div class="cancel-join">
+                    <a href="javascript:void(0)">취소</a>
+                    <a id="joinBtn" href="javascript:void(0)">회원가입</a>
+                </div>
+
+
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+        <footer>footer</footer>
+    </div>
+
+
+
+
+
+
+
+    <!-- 부트스트랩 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    <script src="./additional_information.js"></script>
+
+
+</body>
+
+</html>

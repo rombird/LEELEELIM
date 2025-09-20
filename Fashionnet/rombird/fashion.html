@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/fashion.css">    
+    
+
+    <style>
+        .ibm-plex-sans-kr-regular {
+            font-family: "IBM Plex Sans KR", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'logo';
+            src: url('./font/BitcountGridDouble_Cursive-SemiBold.ttf');
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "LuckiestGuy";
+            src: url('./font/LuckiestGuy-Regular.ttf');
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'BlackHanSans';
+            src: url('./font/BlackHanSans-Regular.ttf');
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'DoHyeon';
+            src: url('./font/DoHyeon-Regular.ttf');
+            font-style: normal;
+        }
+    </style>
+    <!-- common.js, defer 옵션-->
+    <script src="./js/common.js" defer></script>
+</head>
+
+
+<!-- <div class = "fashion">
+    <header></header>
+    <main></main>
+    <footer></footer>
+</div> -->
+
+
+<body>
+    <div class="fashion">
+        <header class="">
+            <div class="topHeader">
+                <ul class="top layoutCenter">
+                    <li class="mainSide">부트스트랩추가</li>
+                    <li class="side"><a class="onair" href="javascript:void(0)">ONAIR</a></li>
+                    <li class="side"><a class="search" href="javascript:void(0)"><img class="imgSearch"
+                                src="./image/돋보기.svg" alt=""></a></li>
+                    <li class="side"><a class="login" href="javascript:void(0)"><img class="imgLogin"
+                                src="image/person.svg" alt="">로그인</a></li>
+                </ul>
+            </div>
+            <div class="navHeader">
+                <div class="detailnav layoutCenter">
+                    <h1><a style="font-family:'LuckiestGuy'" href="javascript:void(0)">FASHIONLLL</a></h1>
+                    <div class="wrap">
+                        <ul class="mainNav">
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">INSIGHT</a>
+                                <ul class="subNav">
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">패션키워드 검색</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">라이프스타일</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">지속가능성</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">TREND</a>
+                                <ul class="subNav">
+                                    <li>
+                                        <a href="javascript:void(0)">Trend NOW</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Trend Forecast</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">3D Design</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">MARKETING</a>
+                                <ul class="subNav">
+                                    <li>
+                                        <a href="javascript:void(0)">소비트렌드 분석</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">글로벌 이슈</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">마케팅 전략</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">AI-FASHIONTECH</a>
+                                <ul class="subNav">
+                                    <li>
+                                        <a href="javascript:void(0)">AI-FASHIONTECH</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">패션 소비현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">패션브랜드</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">NEWS</a>
+                                <ul class="subNav">
+                                    <li>
+                                        <a href="javascript:void(0)">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">캘린더</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="">
+            <div class="mainBanner">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./image/banner1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./image/banner2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./image/banner3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./image/banner4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="subMain layoutCenter">
+                <div class="join">
+                    <div class="joinBox">
+                        <h2>회원 가입 후 FASHOINLLL에서 제공하는 다양한 서비스를 이용해보세요</h2>
+                        <a class="joinBtn" href="javascript:void(0)">FASHOINLLL 가입하기</a>
+                        <p>FASHOINLLL 회원이 되시면 컨텐츠를 확인하실 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="weather">
+                    <h2 class="ibm-plex-sans-kr-regular">날씨</h2>
+                    <div class="weatherContent">
+                        <div class="wcl"></div>
+                        <div class="wcr"></div>
+                    </div>
+                </div>
+                <div class="issue">
+                    <h2 class="ibm-plex-sans-kr-regular">주간 패션 이슈</h2>
+                    <div class="issueBoxes row row-cols-1 row-cols-md-3 g-4">
+                        <div class="card col h-100" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">content1</p>
+                            </div>
+                        </div>
+                        <div class="card col h-100" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">content2</p>
+                            </div>
+                        </div>
+                        <div class="card col h-100" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">content3</p>
+                            </div>
+                        </div>
+                        <div class="card col h-100" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">content4</p>
+                            </div>
+                        </div>
+                        <div class="card h-100" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">content5</p>
+                            </div>
+                        </div>
+                        <div class="card h-100" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">content6</p>
+                            </div>
+                        </div>
+                        <div class="card h-100" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">content7</p>
+                            </div>
+                        </div>
+                        <div class="card h-100" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">content8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trend">
+                    <h2 class="ibm-plex-sans-kr-regular">Trend Now</h2>
+                    <div class="trendContent">
+                        <div class="trendGraph">아이템 순위 그래프</div>
+                        <div class="trendChart">쇼핑몰차트</div>
+                    </div>
+                </div>
+                <div class="board">
+                    <div class="boardInfo">
+                        <h2 class="ibm-plex-sans-kr-regular">FASHIONLLL 공지사항</h2>
+                        <div class="boardTable">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>@social</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="">
+            <div class="mainFooter layoutCenter">
+                <div class="footerLogo" style="font-family:'LuckiestGuy'">
+                    <h1>FASHIONLLL</h1>
+                </div>
+                <div class="footerInfo">
+                    <div class="footerInfoL">
+                        <p>대구광역시 중구 중앙대로 366</p>
+                        <p>LeeLeeLim연합회</p>
+                        <p>admin@gmail.com</p>
+                        <p>053-123-4567</p>
+                    </div>
+                    <div class="footerInfoR">
+                        <ul class="site">
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                            <li><a href="javascript:void(0)">사이트맵</a></li>
+                        </ul>
+                        <ul class="related">
+                            <li><a href="javascript:void(0)">관련기관정보</a></li>
+                        </ul>
+                        <ul class="personInfo">
+                            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                            <li><a href="javascript:void(0)">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

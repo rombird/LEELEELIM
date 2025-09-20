@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/fashion.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- 부트스틑랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+
+    <!-- 중간에 위치하게 할려면 layoutCenter -->
+
+    <div class="fashion">
+        <header>
+
+            <div class="topHeader">
+                <ul class="top layoutCenter">
+                    <li class="mainSide">부트스트랩추가</li>
+                    <li class="side"><a class="onair" href="javascript:void(0)">ONAIR</a></li>
+                    <li class="side"><a class="search" href="javascript:void(0)"><img class="imgSearch"
+                                src="./image/돋보기.svg" alt=""></a></li>
+                    <li class="side"><a class="login" href="javascript:void(0)"><img class="imgLogin"
+                                src="image/person.svg" alt="">로그인</a></li>
+                </ul>
+            </div>
+            <div class="navHeader">
+                <div class="detailnav layoutCenter">
+                    <h1><a style="font-family:'LuckiestGuy'" href="javascript:void(0)">FASHIONLLL</a></h1>
+                    <div class="wrap">
+                        <ul class="mainNav">
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">INSIGHT</a>
+                                <ul class="subNav">
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">패션키워드 검색</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">라이프스타일</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">지속가능성</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">TREND</a>
+                                <ul class="subNav">
+                                    <li>
+                                        <a href="javascript:void(0)">Trend NOW</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Trend Forecast</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">3D Design</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">MARKETING</a>
+                                <ul class="subNav">
+                                    <li>
+                                        <a href="javascript:void(0)">소비트렌드 분석</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">글로벌 이슈</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">마케팅 전략</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">AI-FASHIONTECH</a>
+                                <ul class="subNav">
+                                    <li>
+                                        <a href="javascript:void(0)">AI-FASHIONTECH</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">패션 소비현황</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">패션브랜드</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">NEWS</a>
+                                <ul class="subNav">
+                                    <li>
+                                        <a href="javascript:void(0)">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">캘린더</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+
+        <main>
+            <h2 class="trend-now-data">Trend Now[DATA]</h2>
+
+
+            <!-- Runway 탭 시작부분 -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Runway</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">E-commerce</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"
+                        type="button" role="tab" aria-controls="messages" aria-selected="false">Quick Trend
+                        Bite</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings"
+                        type="button" role="tab" aria-controls="settings" aria-selected="false">쓸거면</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings"
+                        type="button" role="tab" aria-controls="settings" aria-selected="false">씁시다</button>
+                </li>
+            </ul>
+
+
+
+
+            <!-- Tab panes, 각각 선택하면 나올 화면들 -->
+            <!-- 첫 번째 탭 -->
+            <div class="tab-content">
+
+
+
+                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <div class="t-area">시즌별로 출시한 아이템의 <b>전년동기대비 비중 증감률</b>을 확인할 수 있습니다</div>
+                    <div class="c-area">
+                        <div class="sd">
+                            <span>기준 :</span>
+
+                            <label class="runway-btn-labal" for="item">
+                                <input type="radio" id="item" name="runwayBtn" value="item" aria-checked="true">
+                                아이템
+                            </label>
+
+
+                            <label class="runway-btn-labal" for="color">
+                                <input type="radio" id="color" value="color" name="runwayBtn">
+                                컬러
+                            </label>
+
+
+                            <label class="runway-btn-labal" for="material">
+                                <input type="radio" id="material" name="runwayBtn" value="material">
+                                소재
+                            </label>
+
+
+                            <label class="runway-btn-labal" for="print">
+                                <input type="radio" id="print" name="runwayBtn" value="print">
+                                프린트
+                            </label>
+
+                            <label class="runway-btn-labal" for="superStyle">
+                                <input type="radio" id="superStyle" name="runwayBtn" value="superStyle">
+                                스타일
+                            </label>
+
+                            <div class="period">
+                                <span>기간 : </span>
+                                <select class="period-select" name="period-select" id="periodSelect">
+                                    <option value="" selected>23 F/W men's</option>
+                                    <option value="" selected>23 F/W Women's</option>
+                                    <option value="" selected>23 S/S men's</option>
+                                    <option value="" selected>23 S/S Women's</option>
+                                    <option value="" selected>24 F/W men's</option>
+                                    <option value="" selected>24 W/W Women's</option>
+                                    <option value="" selected>24 S/S men's</option>
+                                    <option value="" selected>24 S/S Women's</option>
+                                    <option value="" selected>25 F/W men's</option>
+                                    <option value="" selected>25 F/W Women's</option>
+                                    <option value="" selected>25 S/S men's</option>
+                                    <option value="" selected>25 S/S Women's</option>
+                                </select>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="runway-graph">
+                            <div>
+                                <div class="runway-graph-box">
+                                    <canvas id="bar-chart1"></canvas>
+                                    <canvas id="bar-chart2"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    2번째 탭
+                </div>
+                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
+                    3번째 탭
+                </div>
+                <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
+                    4번째 탭
+                </div>
+                <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
+                    5번째 탭
+                </div>
+            </div>
+
+            <div class="list_t_area">
+                <div class="w_box">
+                    <div class="count">총 <b>X</b>개</div>
+                    <select class="season_select_box" name="seasonSelectBox" id="">
+                        <option value="" selected>Season</option>
+                        <option value="F20">20 F/W</option>
+                        <option value="S21">21 S/S</option>
+                        <option value="F21">21 F/W </option>
+                        <option value="S22">22 S/S</option>
+                        <option value="F22">22 F/W</option>
+                        <option value="S23">23 S/S</option>
+                        <option value="F23">23 F/W</option>
+                        <option value="S24">24 S/S</option>
+                        <option value="F25">25 F/W</option>
+                    </select>
+
+                    <select class="season_select_box" name="seasonSelectBox" id="">
+                        <option value="" selected>Season</option>
+                        <option value="F20">20 F/W</option>
+                        <option value="S21">21 S/S</option>
+                        <option value="F21">21 F/W </option>
+                        <option value="S22">22 S/S</option>
+                        <option value="F22">22 F/W</option>
+                        <option value="S23">23 S/S</option>
+                        <option value="F23">23 F/W</option>
+                        <option value="S24">24 S/S</option>
+                        <option value="F25">25 F/W</option>
+                    </select>
+
+                    <select class="season_select_box" name="seasonSelectBox" id="">
+                        <option value="" selected>Season</option>
+                        <option value="F20">20 F/W</option>
+                        <option value="S21">21 S/S</option>
+                        <option value="F21">21 F/W </option>
+                        <option value="S22">22 S/S</option>
+                        <option value="F22">22 F/W</option>
+                        <option value="S23">23 S/S</option>
+                        <option value="F23">23 F/W</option>
+                        <option value="S24">24 S/S</option>
+                        <option value="F25">25 F/W</option>
+                    </select>
+
+                    <select class="season_select_box" name="seasonSelectBox" id="">
+                        <option value="" selected>Season</option>
+                        <option value="F20">20 F/W</option>
+                        <option value="S21">21 S/S</option>
+                        <option value="F21">21 F/W </option>
+                        <option value="S22">22 S/S</option>
+                        <option value="F22">22 F/W</option>
+                        <option value="S23">23 S/S</option>
+                        <option value="F23">23 F/W</option>
+                        <option value="S24">24 S/S</option>
+                        <option value="F25">25 F/W</option>
+                    </select>
+                    <div class="sort">
+                        <span>Sort</span><select class="sort_select_box">
+                            <option value="newer" selected>최신순</option>
+                            <option value="popularity">인기순</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- 카드들 -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first
+                                    to show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first
+                                    to show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first
+                                    to show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./몰티즈이미지/몰티즈3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first
+                                    to show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 1페이지 2페이지 선택 버튼 -->
+                <div class="pagination">
+                    <span>
+                        <a class="" href="./TrendNow1.html">1</a>
+                        <a class="" href="./TrendNow2.html">2</a>
+                        <a class="active" href="./TrendNow3.html">3</a>
+                        <a class="" href="./TrendNow4.html">4</a>
+                        <a class="" href="./TrendNow5.html">5</a>
+                    </span>
+                </div>
+
+            </div>
+
+
+        </main>
+
+        <footer>
+
+
+            <div class="mainFooter layoutCenter">
+                <div class="footerLogo" style="font-family:'LuckiestGuy'">
+                    <h1>FASHIONLLL</h1>
+                </div>
+                <div class="footerInfo">
+                    <div class="footerInfoL">
+                        <p>대구광역시 중구 중앙대로 366</p>
+                        <p>LeeLeeLim연합회</p>
+                        <p>admin@gmail.com</p>
+                        <p>053-123-4567</p>
+                    </div>
+                    <div class="footerInfoR">
+                        <ul class="site">
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                            <li><a href="javascript:void(0)">사이트맵</a></li>
+                        </ul>
+                        <ul class="related">
+                            <li><a href="javascript:void(0)">관련기관정보</a></li>
+                        </ul>
+                        <ul class="personInfo">
+                            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                            <li><a href="javascript:void(0)">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- CHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./js/trend_now.js"></script>
+</body>
+
+</html>
