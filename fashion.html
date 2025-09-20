@@ -25,17 +25,18 @@
             font-style: normal;
         }
 
+        @font-face{
+            font-family: 'f1';
+            src: url('./font/NotoSansKR-VariableFont_wght.ttf');
+            font-style: normal;
+        }
         @font-face {
             font-family: 'logo';
             src: url('./font/BitcountGridDouble_Cursive-SemiBold.ttf');
             font-style: normal;
         }
 
-        @font-face {
-            font-family: "LuckiestGuy";
-            src: url('./font/LuckiestGuy-Regular.ttf');
-            font-style: normal;
-        }
+        
 
         @font-face {
             font-family: 'BlackHanSans';
@@ -55,19 +56,10 @@
 
 <body>
     <div class="fashion">
-        <header class="">
-            <div class="topHeader">
-                <ul class="top layoutCenter">
-                    <li class="mainSide">뭘 넣어야 잘 넣었다고 소문이 날까</li>
-                    <li class="side"><a class="onair" href="javascript:void(0)">ONAIR</a></li>
-                    
-                    <li class="side"><a class="login" href="javascript:void(0)"><img class="imgLogin"
-                                src="image/person.svg" alt="">로그인</a></li>
-                </ul>
-            </div>
+        <header class="header">
             <div class="navHeader">
                 <div class="detailnav layoutCenter">
-                    <h1><a style="font-family:'LuckiestGuy'" href="javascript:void(0)">FASHIONLLL</a></h1>
+                    <h1><a  href="javascript:void(0)">FASHIONLLL</a></h1>
                     <div class="wrap">
                         <ul class="mainNav">
                             <li class="mainList">
@@ -138,6 +130,14 @@
                                 </ul>
                             </li>
                         </ul>
+                        <ul class="mainSideNav">
+                            <li class="mainList">
+                                <a class="login" href="javascript:void(0)"><img class="imgLogin" src="image/person.svg" alt="">로그인</a>
+                            </li>
+                            <li class="mainList">
+                                <a class=join href="javascript:void(0)">회원가입</a>
+                            </li>
+                        </ul>    
                     </div>
                 </div>
             </div>
@@ -155,6 +155,15 @@
                             </select>
                             <input id="title" type="text" placeholder="검색어를 입력하세요." style="outline:none;">
                             <button type="button" id="searchBtn">검색</button>
+                        </div>
+                        <div class="searchKey">
+                            <ul class="keyList">
+                                <li><a href="javascript:void(0)">#keyword1</a></li>
+                                <li><a href="javascript:void(0)">#keyword2</a></li>
+                                <li><a href="javascript:void(0)">#keyword3</a></li>
+                                <li><a href="javascript:void(0)">#keyword4</a></li>
+                                <li><a href="javascript:void(0)">#keyword5</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
