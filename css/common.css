@@ -32,12 +32,17 @@ body {
     /* #3A6B71 */
     /* 버튼 : #3A6B71 */
     /* linear-gradient(90deg, #BCCDC3, #8BA69C */
+    background-color: white;
+    position:sticky; 
+    top: 0;
+    left:0;
+    z-index: 1000;
+    /* 맨 위에 붙어있게 하기 위해 top, left 0 필수 */
  }
 
 .fashion .navHeader>.detailnav {
     display: flex;
     line-height: 90px;
-    
 }
 .fashion .navHeader>.detailnav>h1{
     margin:0 30px;
@@ -47,6 +52,7 @@ body {
 }
 .fashion .navHeader>.detailnav>h1>a{
     font-family:'logo';
+    color:#3A6B71;
 }
 
 .fashion .navHeader>.detailnav>.wrap{
@@ -59,8 +65,10 @@ body {
 
 .fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList {
     /* border:1px solid; */
-    margin:0 22px;
-    
+    width:180px;
+    margin:0;
+    position: relative;
+    text-align:center;
 }
 
 .fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList>.mainMenu {
@@ -74,15 +82,53 @@ body {
 /* mainSideNav - 로그인, 회원가입 */
 .fashion .navHeader>.detailnav>.wrap>.mainSideNav{
     display:flex;
-    margin:0 0 0 120px;
+    margin-left:30px;
     /* border:1px solid;  */
     line-height: 100px;
+    width:180px;
 }
 .fashion .navHeader>.detailnav>.wrap>.mainSideNav>.mainList{
     /* border:1px solid; */
-    margin: 0 15px;
+    margin: 0 10px;
     font-family:'f1';
+    transition: color 0.3s ease; 
 }
+
+/* subNav 호버부분 다시하기 */
+
+.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList>.subNav {
+    width:180px;
+    height:200px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: white;
+    /* border: 1px solid #ced8d9; */
+    display: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 0;
+}
+.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList>.subNav>.subList{
+    /* border:1px solid; */
+    height:60px;
+}
+.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList>.subNav>.subList>a{
+    display:flex;
+    height: 100%; 
+    align-items: center;
+    padding:0 20px;
+    /* line-height:60px; */
+    justify-content: center;
+}
+.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList:hover>.mainMenu{
+    color:#3A6B71;
+    font-weight: bold;
+}
+.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList:hover .subNav {
+    display: block;
+}
+
+
 .fashion .navHeader>.detailnav>.wrap>.mainSideNav>.mainList>.login{
     line-height: 100px;
 }
@@ -94,61 +140,63 @@ body {
     line-height: 100px;
 }
 
-/* subNav 호버부분 다시하기 */
 
-.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList>.subNav {
-    display: none;
-    /* border: 1px solid; */
-}
-
-.fashion .navHeader>.detailnav>.wrap>.mainNav>.mainList:hover+.subNav {
-    display: block;
-}
 
 /* footer */
 .fashion>footer{
-    background-color:#f7f7f7;
-    height:300px;
-    
+    background-color:#3a6b7113;
+    height:240px;
 }
 .fashion .mainFooter{
     /* border:1px solid; */
-    padding: 20px;
+    padding-top: 20px;
     /* 여기서 마진 잡으면 X */
 }
 .fashion .mainFooter>.footerLogo>h1{
-    margin:20px;
+    margin:20px 30px;
+    font-family:'logo';
 }
 .fashion .mainFooter>.footerInfo{
     display:flex;
 }
 .fashion .mainFooter>.footerInfo>.footerInfoL{
-    
-    margin:20px;
+    margin-left:30px;
 }
 .fashion .mainFooter>.footerInfo>.footerInfoL>p{
     width:700px;
     padding:0;
-    margin:0 100px 0 0;
+    margin:0 90px 0 0;
    
 }
 .fashion .mainFooter>.footerInfo>.footerInfoR{
-    width:400px;
-    margin:20px 0;
-    
+    width:500px;
     display:flex;
 }
 .fashion .mainFooter>.footerInfo>.footerInfoR>.site{
     border-right:1px solid lightgray;
-    margin-right:10px;
-    width:90px;
+    width:120px;
+}
+.fashion .mainFooter>.footerInfo>.footerInfoR>.site a{
+    padding:10px;
+}
+.fashion .mainFooter>.footerInfo>.footerInfoR li{
+    margin:10px;
+}
+.fashion .mainFooter>.footerInfo>.footerInfoR a{
+    /* margin:0px; */
 }
 .fashion .mainFooter>.footerInfo>.footerInfoR>.related{
     border-right:1px solid lightgray;
-    margin:0 10px;
-    width:110px;
+    width:140px;
 }
+.fashion .mainFooter>.footerInfo>.footerInfoR>.related a{
+    padding:10px;
+}
+
+
 .fashion .mainFooter>.footerInfo>.footerInfoR>.personInfo{
-    margin:0 10px;
-    width:150px;
+    width:210px;
+}
+.fashion .mainFooter>.footerInfo>.footerInfoR>.personInfo a{
+    padding:10px;
 }

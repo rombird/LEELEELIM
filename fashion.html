@@ -19,12 +19,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <style>
-        .ibm-plex-sans-kr-regular {
-            font-family: "IBM Plex Sans KR", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
+        
         @font-face{
             font-family: 'f1';
             src: url('./font/NotoSansKR-VariableFont_wght.ttf');
@@ -32,12 +27,9 @@
         }
         @font-face {
             font-family: 'logo';
-            src: url('./font/BitcountGridDouble_Cursive-SemiBold.ttf');
+            src: url('./font/BitcountGridDouble-SemiBold.ttf');
             font-style: normal;
         }
-
-        
-
         @font-face {
             font-family: 'BlackHanSans';
             src: url('./font/BlackHanSans-Regular.ttf');
@@ -59,61 +51,63 @@
         <header class="header">
             <div class="navHeader">
                 <div class="detailnav layoutCenter">
-                    <h1><a  href="javascript:void(0)">FASHIONLLL</a></h1>
+                    <h1><a href="javascript:void(0)">FASHIONLLL</a></h1>
                     <div class="wrap">
                         <ul class="mainNav">
                             <li class="mainList">
                                 <a class=mainMenu href="javascript:void(0)">INSIGHT</a>
+                                
                                 <ul class="subNav">
                                     <li class="subList">
                                         <a href="javascript:void(0)">패션키워드 검색</a>
                                     </li>
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">라이프스타일</a>
                                     </li>
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">지속가능성</a>
                                     </li>
                                 </ul>
+            
                             </li>
                             <li class="mainList">
                                 <a class=mainMenu href="javascript:void(0)">TREND</a>
                                 <ul class="subNav">
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">Trend NOW</a>
                                     </li>
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">Trend Forecast</a>
                                     </li>
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">3D Design</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="mainList">
+                            <!-- <li class="mainList">
                                 <a class=mainMenu href="javascript:void(0)">MARKETING</a>
                                 <ul class="subNav">
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">소비트렌드 분석</a>
                                     </li>
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">글로벌 이슈</a>
                                     </li>
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">마케팅 전략</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="mainList">
                                 <a class=mainMenu href="javascript:void(0)">AI-FASHIONTECH</a>
                                 <ul class="subNav">
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">AI-FASHIONTECH</a>
                                     </li>
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">패션 소비현황</a>
                                     </li>
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">패션브랜드</a>
                                     </li>
                                 </ul>
@@ -121,10 +115,10 @@
                             <li class="mainList">
                                 <a class=mainMenu href="javascript:void(0)">NEWS</a>
                                 <ul class="subNav">
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">공지사항</a>
                                     </li>
-                                    <li>
+                                    <li class="subList">
                                         <a href="javascript:void(0)">캘린더</a>
                                     </li>
                                 </ul>
@@ -154,7 +148,7 @@
                                 <option value="jp" data-lang="일본어">일어</option>
                             </select>
                             <input id="title" type="text" placeholder="검색어를 입력하세요." style="outline:none;">
-                            <button type="button" id="searchBtn">검색</button>
+                            <button type="button" id="searchBtn"><img src="image/search2.png" alt="">검색</button>
                         </div>
                         <div class="searchKey">
                             <ul class="keyList">
@@ -167,18 +161,36 @@
                         </div>
                     </div>
                 </div>
-                <div class="mainLayout"></div>
+                <div class="mainLayout">
+                    <div class="mainLeft">
+                        <div class="leftList"><p>카테고리별 검색</p></div>
+                        <ul class="leftCategory">
+                            <li><a href="javascript:void(0)"><span>티셔츠</span></a></li>
+                            <li><a href="javascript:void(0)"><span>블라우스</span></a></li>
+                            <li><a href="javascript:void(0)"><span>셔츠</span></a></li>
+                            <li><a href="javascript:void(0)"><span>자켓</span></a></li>
+                            <li><a href="javascript:void(0)"><span>점퍼</span></a></li>
+                            <li><a href="javascript:void(0)"><span>팬츠</span></a></li>
+                            <li><a href="javascript:void(0)"><span>치마</span></a></li>
+                            <li><a href="javascript:void(0)"><span>원피스</span></a></li>
+                            <li><a href="javascript:void(0)"><span>악세사리</span></a></li>
+                            <li><a href="javascript:void(0)"><span>기타</span></a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="mainRight">배너형식</div>
+                </div>
             </div>
             <div class="subMain layoutCenter">
-                <div class="join">
+                <!-- <div class="join">
                     <div class="joinBox">
                         <h2>회원 가입 후 FASHOINLLL에서 제공하는 다양한 서비스를 이용해보세요</h2>
                         <a class="joinBtn" href="javascript:void(0)">FASHOINLLL 가입하기</a>
                         <p>FASHOINLLL 회원이 되시면 컨텐츠를 확인하실 수 있습니다.</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="weather">
-                    <h2 class="ibm-plex-sans-kr-regular">날씨</h2>
+                    <h2>오늘의 날씨 check</h2>
                     <div class="weatherContent">
                         <div class="wcl"></div>
                         <div class="wcr"></div>
@@ -246,7 +258,7 @@
                 </div>
                 <div class="board">
                     <div class="boardInfo">
-                        <h2 class="ibm-plex-sans-kr-regular">FASHIONLLL 공지사항</h2>
+                        <h2 class="ibm-plex-sans-kr-regular">만족도를 공유해주세요</h2>
                         <div class="boardTable">
                             <table class="table table-hover">
                                 <thead>
@@ -287,7 +299,7 @@
 
         <footer class="">
             <div class="mainFooter layoutCenter">
-                <div class="footerLogo" style="font-family:'LuckiestGuy'">
+                <div class="footerLogo">
                     <h1>FASHIONLLL</h1>
                 </div>
                 <div class="footerInfo">
