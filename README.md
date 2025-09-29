@@ -1,3 +1,3 @@
 # BIGDATAUI_TEAMPJ
 ---
-
+### 3-2 논리적API
