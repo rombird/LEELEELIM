@@ -1,3 +1,4 @@
 # BIGDATAUI_TEAMPJ
 ---
-### 논리적설계, 내부수집 API
+안심데이터 대회(저번회차)
+https://www.youtube.com/watch?v=qGuE8CYek_c
