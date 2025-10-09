@@ -1,14 +1,10 @@
 # BIGDATAUI_TEAMPJ
-<a href="https://www.fashionnet.or.kr/" target="_blank">패션넷사이트</a>  - 새롬
+<a href="[https://www.fashionnet.or.kr/](https://bigdata.sbiz.or.kr/#/)" target="_blank">소상공인365사이트</a>
 
-<a href="https://www.fashionnet.or.kr/marketing-and-retail/consumer-trend-insight/" target="_blank">소비트렌드분석</a>  - 수현  
+## 메뉴
+1. 빅데이터 상권분석 
+2. 내 가게 경영진단
+3. 상권시장 핫트렌드 - 관련 정책이나 창업관련 정보 제공
+4. 소상공인 대시보드 - 커뮤니티로 사용
+5. 이용안내
 
-<a href="https://www.fashionnet.or.kr/user/login/" target="_blank">로그인</a>  - 인호
-
-<a href="https://www.fashionnet.or.kr/trend/trend-forecast/" target="_blank">트렌드포레스트</a>    - 인호(게시글)  
-
-<a href="https://api.visitkorea.or.kr/#/" target="_blank">디자인 참고</a> 
-
-
----
-9/21 - front작업 전반적인 스타일 마무리(폰트, 컬러 등등 정하기)
