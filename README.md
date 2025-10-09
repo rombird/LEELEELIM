@@ -1,5 +1,7 @@
 # BIGDATAUI_TEAMPJ
-<a href="[https://www.fashionnet.or.kr/](https://bigdata.sbiz.or.kr/#/)" target="_blank">소상공인365사이트</a>
+<a href="https://bigdata.sbiz.or.kr/#/" target="_blank">소상공인365사이트</a>
+<a href="https://www.semas.or.kr/web/main/index.kmdc" target="_blank">소상공인365사이트</a>
+<a href="https://ols.semas.or.kr/ols/man/SMAN010M/page.do" target="_blank">소상공인정책자금사이트</a>
 
 ## 메뉴
 1. 빅데이터 상권분석 
