@@ -1,14 +1,15 @@
-.fashion .mainBanner{
+.custom .mainBanner{
     height:680px;
     /* border:1px solid; */
     margin-top:30px;
 }
+
 /* 검색창 */
-.fashion .mainBanner>.mainSearch{
+.custom .mainBanner>.mainSearch{
     /* border:1px solid; */
     height:200px;
 }
-.fashion .mainBanner>.mainSearch>.searchBox>.search{
+.custom .mainBanner>.mainSearch>.searchBox>.search{
     margin:5px;
     width:1240px;
     height:77px;
@@ -19,7 +20,7 @@
     position: relative;
     line-height:50px;
 }
-.fashion .mainBanner>.mainSearch>.searchBox>.search>select{
+.custom .mainBanner>.mainSearch>.searchBox>.search>select{
     width: 130px;
     border: none;
     /* box-sizing: border-box; */
@@ -27,7 +28,6 @@
     background-repeat: no-repeat;
     background-color: #fff;
     background-position: 100% 50%;
-    
     border: none;
     background-repeat: no-repeat;
     background-color: #fff;
@@ -35,7 +35,7 @@
     margin:20px 50px;
 }
 
-.fashion .mainBanner>.mainSearch>.searchBox>.search>#title{
+.custom .mainBanner>.mainSearch>.searchBox>.search>#title{
     border:none;
     width: 800px;
     height: 40px;
@@ -45,7 +45,7 @@
     padding: 3px 10px;
     /* box-sizing: border-box; */
 }
-.fashion .mainBanner>.mainSearch>.searchBox>.search>#searchBtn{
+.custom .mainBanner>.mainSearch>.searchBox>.search>#searchBtn{
     /* position: absolute; */
     /* top: 50%;
     right: 15px; */
@@ -62,25 +62,25 @@
     justify-content: center;
     align-items: center;
 }
-.fashion .mainBanner>.mainSearch>.searchBox>.search>#searchBtn>img{
+.custom .mainBanner>.mainSearch>.searchBox>.search>#searchBtn>img{
     width:40px;
     height:40px;
     filter: opacity(0.5) drop-shadow(0 0 0 #fff);
     display:block;
 }
 
-.fashion .mainBanner>.mainSearch>.searchBox>.searchKey{
+.custom .mainBanner>.mainSearch>.searchBox>.searchKey{
     
 }
 
-.fashion .mainBanner>.mainSearch>.searchBox>.searchKey>.keyList{
+.custom .mainBanner>.mainSearch>.searchBox>.searchKey>.keyList{
     display:flex;
     /* border:1px solid; */
     margin:25px 380px;
     
 }
 
-.fashion .mainBanner>.mainSearch>.searchBox>.searchKey>.keyList a{
+.custom .mainBanner>.mainSearch>.searchBox>.searchKey>.keyList a{
     /* border:1px solid; */
     border-radius:50px;
     margin:20px 5px;
@@ -88,13 +88,16 @@
     background-color:#3A6B71;
     color:white;
 }
-.fashion .mainBanner>.mainLayout{
+
+
+.custom .mainBanner>.mainLayout{
+    /* background-color: #3A6B71; */
     height:470px;
-    /* border:1px solid; */
+    border:1px solid;
     display:flex;
     margin:0 20px;
 }
-.fashion .mainBanner>.mainLayout>.mainLeft{
+.custom .mainBanner>.mainLayout>.mainLeft{
     width:600px;
     height:450px;
     /* border:1px solid; */
@@ -103,22 +106,21 @@
     box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
     box-sizing: border-box;
 }
-.fashion .mainBanner>.mainLayout>.mainLeft>.leftList{
+.custom .mainBanner>.mainLayout>.mainLeft>.leftList{
     height:30px;
     margin:10px;
     font-size:20px;
 }
-.fashion .mainBanner>.mainLayout>.mainLeft>.leftList p{
-    font-family:'f1';
+.custom .mainBanner>.mainLayout>.mainLeft>.leftList p{
+    /* font-family:'f1'; */
     font-size:25px;
 }
 
-.fashion .mainBanner>.mainLayout>.mainLeft>.leftCategory{
-    
+.custom .mainBanner>.mainLayout>.mainLeft>.leftCategory{
     display: flex;
     flex-wrap: wrap; /* 줄바꿈 허용 */
 }
-.fashion .mainBanner>.mainLayout>.mainLeft>.leftCategory>li{
+.custom .mainBanner>.mainLayout>.mainLeft>.leftCategory>li{
     margin:20px 0;
     height:150px;
     width: 20%; /* 5개니까 100% ÷ 5 = 20% */
@@ -127,147 +129,179 @@
     text-align:center;
     padding: 10px 0;
 }
-.fashion .mainBanner>.mainLayout>.mainRight{
+.custom .mainBanner>.mainLayout>.mainRight{
     width:600px;
     height:450px;
     margin:10px;
-
     border-radius: 10px;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
     box-sizing: border-box;
 }
 
-/* 로그인 부분 안넣어도 되지 않을까? */
-.fashion .subMain>.join{
-    height:430px;
-    background-color:rgb(234, 234, 234);
-    margin:0 33px;
-    position: relative;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-}
-.fashion .subMain>.join>.joinBox{
-    border:1px solid;
-    border-radius:8px;
-    width:600px;
-    height:300px;
-    padding:30px 40px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%, -50%);
-}
-.fashion .subMain>.join>.joinBox>h2{
-    margin:15px 0;
-    padding-bottom:30px;
-}
-.fashion .subMain>.join>.joinBox>.joinBtn{
-    border-radius:10px;
-    border:1px solid;
-    width:230px;
-    height:65px;
-    margin:130px;
-    padding:15px;
-    font-size:20px;
-}
-.fashion .subMain>.join>.joinBox p{
-    margin:40px;
-}
-
-.fashion .subMain h2{
+/* subMain */
+.custom .subMain h2{
     margin:20px 0 0 30px;
-    font-family:'f1';
+    font-family:'nexonBold';
 }
 
-/* 날씨 */
-.fashion .subMain>.weather{
+/* area */
+.subMain .subMain1{
+    /* background-color: #F0EDE5; */
+}
+.subMain .area{
     height:635px;
     /* border:1px solid; */
 }
-
-.fashion .subMain>.weather>.weatherContent{
+.subMain .area>.areaContent{
     display:flex;
-    margin:25px 20px 0 20px;;
+    margin:25px 20px 0 20px;
     /* border:1px solid; */
     height:530px;
 }
-.fashion .subMain>.weather>.weatherContent>.wcl{
-    width:600px;
-    margin:10px;
+.subMain .area>.areaContent>.wcl{
+    width:500px;
+    margin:20px 10px;
     background-color: rgb(234, 234, 234);
-
     border-radius: 10px;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
     box-sizing: border-box;
 }
-.fashion .subMain>.weather>.weatherContent>.wcr{
-    width:600px;
-    margin:10px;
+.subMain .area>.areaContent>.wcr{
+    width:500px;
+    margin:20px 10px;
     background-color: rgb(234, 234, 234);
-
     border-radius: 10px;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
     box-sizing: border-box;
 }
-.fashion .subMain>.issue{
-    height:780px;
-    /* border:1px solid; */
-}
 
-.fashion .subMain>.issue>.issueBoxes{
+/* issue */
+.subMain .issue{
+    /* height:500px; */
+    border:1px solid #f6f7f9;
+    border-radius:20px;
+    background-color:#f6f7f9;
+}
+.subMain .issue>h2{
     margin:20px;
-    /* border:1px solid; */
+    text-align:center;
 }
-.fashion .subMain>.issue>.issueBoxes>.card{
-    width:300px;
-    height:380px;
-    margin:10px;
+.subMain .issue>.issueBoxes{
+    margin:20px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
 
-    border-radius: 10px;
-    box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
-    box-sizing: border-box;
+.btn {
+  appearance: none;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  margin: 20px;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px #3A6B71 inset;
+    color:white;
+    outline: 0;
+  }
+  &:focus {
+    color: #3A6B71;
+    outline: 0;
+  }
+}
+
+.subMain .issue>.issueBoxes>#box{
+    /* border:1px solid; */
+    width:300px;
+    border-radius:8px;
+    overflow:hidden;
+    margin:20px;
+    transition: all 0.3s cubic-bezier(0.42, 0.0, 0.58, 1.0);
+}
+.subMain .issue>.issueBoxes>#box:hover{
+    box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform:translateY(-10px);
+}
+.subMain .issue>.issueBoxes>#box *{
+    padding:10px;
+}
+.subMain .issue>.issueBoxes>#box .img{
+    display:block;
+    width:100%;
+    height:200px;
+    padding:0;
+}
+.subMain .issue>.issueBoxes>#box h1{
+    font-family:"nexonBold";
+    font-size:25px;
+}
+.subMain .issue>.issueBoxes>#box .data{
+    font-family:"nexonLight";
+    font-size:20px;
+}
+.subMain .issue>.issueBoxes>#box .text{
+    font-family:"nexonLight";
+    font-size:20px;
+}
+
+.subMain .issue>.issueEnd{
+    height:55px;
+    background-color:#3A6B71;
+    border:1px solid #f6f7f9;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+/* trend */
+.subMain .subMain3{
+    /* background-color: #F0EDE5 ; */
+    /* #AB9C81 F3F0E9 #517C63 #E7DFCF #F0EDE5 */
     
 }
-.fashion .subMain>.issue>.issueBoxes>.card>.card-img-top{
-    height:250px;
-    /* width:280px; */
-    background-color:rgb(234, 234, 234);
-}
-.fashion .subMain>.trend{
-    height:830px;
+.subMain .trend{
+    height:600px;
     /* border:1px solid; */
 }
 
-.fashion .subMain>.trend>.trendContent{
+.subMain .trend>.trendContent{
     display:flex;
-
+    /* border:1px solid; */
 }
-.fashion .subMain>.trend>.trendContent>.trendGraph{
-    height:660px;
-    width:780px;
+.subMain .trend>.trendContent>.trendTitle{
+    height:50px;
+    text-align: center;
+    margin:20px 70px 0 20px;
+}
+.subMain .trend>.trendContent>.trendBox{
+    display:flex;
+}
+.subMain .trend>.trendContent>.trendBox>.trendGraph{
+    margin:25px 20px 0 20px;
+    width:450px;
+    height:530px;
     background-color:rgb(234, 234, 234);
-    margin:20px;
-
     border-radius: 10px;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
     box-sizing: border-box;
 }
-.fashion .subMain>.trend>.trendContent>.trendChart{
-    width:400px;
-    height:660px;
+.subMain .trend>.trendContent>.trendBox>.trendChart{
+    width:450px;
+    height:530px;
     background-color:rgb(234, 234, 234);
     margin:20px;
-
     border-radius: 10px;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
     box-sizing: border-box;
 }
-.fashion .subMain>.board{
+/* board */
+.subMain .board{
     height:466px;
 }
 
-.fashion .subMain>.board>.boardInfo>.boardTable{
+.subMain .board>.boardInfo>.boardTable{
     margin:20px;
     padding:20px;
     border-radius: 10px;

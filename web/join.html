@@ -6,43 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./join_main.css">
-    <link rel="stylesheet" href="./join_header.css">
-    <link rel="stylesheet" href="./join_footer.css">
-
-
+    <link rel="stylesheet" href="./css/join.css">
+    <link rel="stylesheet" href="./css/common.css">
+    
     <!-- 부트스트랩 css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+    <style>
+        @font-face {
+            font-family: 'nexonBold';
+            src: url('./font/NEXONLv1GothicBold.ttf');
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'nexonLight';
+            src: url('./font/NEXONLv1GothicLight.ttf');
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'nexonRegular';
+            src: url('./font/NEXONLv1GothicRegular.ttf');
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'logo';
+            src: url('./font/BitcountGridDouble-SemiBold.ttf');
+            font-style: normal;
+        }
+
+    </style>
+
+
 </head>
 
 <body>
 
-    <div class="wrapper">
+    <div class="custom">
+         <header class="header">
+            <div class="topHeader">
+                <div class="topList layoutCenter">
+                    <ul class="topNav">
+                        <li class="topNavli">
+                            <a class="login" href="javascript:void(0)"><img class="imgLogin" src="image/person.svg" alt="">로그인</a>
+                        </li>
+                        <li class="topNavli">
+                            <a class=join href="./join.html">회원가입</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="navHeader">
+                <div class="detailnav layoutCenter">
+                    <h1><a href="javascript:void(0)">LOGO</a></h1>
+                    <div class="wrap">
+                        <ul class="mainNav">
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">빅데이터 상권 분석</a>
+                                <ul class="subNav">
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">맞춤형정보</a>
+                                    </li>
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">맞춤형정보2</a>
+                                    </li>
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">상권정보3</a>
+                                    </li>
+                                </ul>
 
-        <div class="box">
-            <h1>FASHIONNET</h1>
-            <h2>패션넷 회원가입</h2>
+                            </li>
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">상권시장 TREND</a>
+                                <ul class="subNav">
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">Trend NOW</a>
+                                    </li>
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">NEWS</a>
+                                    </li>
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">Trend 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">소상공인 대시보드</a>
+                                <ul class="subNav">
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">내 가게 경영진단</a>
+                                    </li>
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">커뮤니티</a>
+                                    </li>
+                                    <li class="subList">
+                                        <a href="javascript:void(0)"></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mainList">
+                                <a class=mainMenu href="javascript:void(0)">이용안내</a>
+                                <ul class="subNav">
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">공지사항</a>
+                                    </li>
+                                    <li class="subList">
+                                        <a href="javascript:void(0)">캘린더</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="box layoutCenter">
+            <div class="title">
+                <h1>JOBAYO </h1>
+                <h2>회원가입</h2>
+            </div>
             <ul class="step">
                 <li class="on">
-                    <em class="done">1</em>
-                    회원인증
+                    <div class="num"><em class="done">1</em></div>
+                    <p>약관동의</p>
                 </li>
                 <li class="on">
-                    <em class="active">2</em>
-                    회원정보
-                </li>
-                <li class="on">
-                    <em>3</em>
-                    부가정보
+                    <div class="num"><em class="active">2</em></div>
+                    <p>회원정보</p>
                 </li>
             </ul>
             <div class="provide-points">
-                <b>
-                    회원가입시 2,000Point 제공
-                </b>
-                *최초 1회만 제공 가능합니다
+                <b>회원가입 관련 정보입력시, 필수항목은 반드시 작성하셔야 회원가입이 가능합니다.</b>
+                <b>SMS, 이메일 및 카카오톡 수신 동의 여부 '아니오' 선택할 시, 맞춤형 지원사업 안내 및 지원사업 신청 상태 알림을 받을 수 없습니다.</b>
             </div>
             <form class="join-form" form="post">
                 <dl>
@@ -157,143 +254,38 @@
                         <input type="password" name="rePassword" required>
                     </dd>
                 </dl>
-                <dl class = "job-radios-dl">
-                    <dt>직업</dt>
-                    <dd class="job-radios">
-                        <label for="salaryMan">
-                            <input type="radio" name="job" id="salaryMan" value="salaryman">
-                            회사원
-                        </label>
-                        <label for="publicService">
-                            <input type="radio" name="job" id="publicService" value="publicService">
-                            공무원
-                        </label>
-                        <label for="teacher">
-                            <input type="radio" name="job" id="teacher" value="teacher">
-                            교사
-                        </label>
-                        <label for="selfEmployed">
-                            <input type="radio" name="job" id="selfEmployed" value="selfEmployed">
-                            자영업
-                        </label>
-                        <label for="specializedJob">
-                            <input type="radio" name="job" id="specializedJob" value="specializedJob">
-                            전문직
-                        </label>
-                        <label for="student">
-                            <input type="radio" name="job" id="student" value="student">
-                            학생
-
-                        </label>
-                        <label for="homemaker">
-                            <input type="radio" name="job" id="homemaker" value="homemaker">
-                            주부
-                        </label>
-                        <label for="unemployed">
-                            <input type="radio" name="job" id="unemployed" value="unemployed">
-                            무직
-                        </label>
-
-                        <label for="etc">
-                            <input type="radio" name="job" id="etc" value="etc">기타
-                            <input class="etc-input" type="text" name="etc-input" disabled>
-                        </label>
-                    </dd>
+                <dl class = "addr-dl">
+                    <dt>주소</dt>
+                        
                 </dl>
-                <dl>
-                    <dt>소속</dt>
-                    <dd>
-                        <input type="text" name = "affiliation" placeholder="   소속을 입력해주세요">
-                    </dd>
-                </dl>
-                <div class = "line"></div>
-                <dl class = keyword-dl>
-                    <dt>관심 키워드</dt>
+                <div class="line"></div>
+                <dl class="keyword-dl">
+                    <dt>관심 창업 아이템</dt>
                     <dd class="keyword-checkbox">
                         <label for="bigdata">
                             <input type="checkbox" name="keyword"  value="bigdata" id = "bigdata">
-                            빅데이터
+                            온라인 비즈니스
                         </label>
                         <label for="color">
                             <input type="checkbox" name="keyword" value="color" id = "color" >
-                            컬러
+                            오프라인 소매업
                         </label>
                         <label for="seasonTrend">
                             <input type="checkbox" name="keyword" value="seasonTrend" id="seasonTrend" >
-                            시즌트렌드
+                            푸드/외식업
                         </label>
                         <label for="style">
                             <input type="checkbox" name="keyword" value="style" id="style">
-                            스타일
+                            전문 서비스업
                         </label>
-                        <label for="fabric">
-                            <input type="checkbox" name="keyword" value="fabric" id="fabric">
-                            패브릭
+                        <label for="style">
+                            <input type="checkbox" name="keyword" value="style" id="style">
+                            지식/컨텐츠 사업
                         </label>
-
-                        <label for="trend">
-                            <input type="checkbox" name="keyword" value="trend" id="trend" >
-                            트렌드
+                        <label for="style">
+                            <input type="checkbox" name="keyword" value="style" id="style">
+                            기타
                         </label>
-                        <label for="runway">
-                            <input type="checkbox" name="keyword" value="runway" id="runway">
-                            런웨이
-                        </label>
-                        <label for="womenClothing">
-                            <input type="checkbox" name="keyword" value="womenClothing" id="womenClothing">
-                            여성복
-                        </label>
-                        <label for="menClothing">
-                            <input type="checkbox" name="keyword" value="menClothing" id="menClothing" >
-                            남성복
-                        </label>
-                        <label for="printAndPattern">
-                            <input type="checkbox" name="keyword" value="printAndPattern" id="printAndPattern" >
-                            프린트&패턴
-                        </label>
-
-                        <label for="sportsAndOutdoor">
-                            <input type="checkbox" name="keyword" value="sportsAndOutdoor" id="sportsAndOutdoor">
-                            스포츠&아웃도어
-                        </label>
-                        <label for="denimAndCasual">
-                            <input type="checkbox" name="keyword" value="denimAndCasual" id="denimAndCasual">
-                            데님&캐주얼
-                        </label>
-                        <label for="bag">
-                            <input type="checkbox" name="keyword" value="bag" id="bag">
-                            가방
-                        </label>
-                        <label for="shoes">
-                            <input type="checkbox" name="keyword" value="shoes" id="shoes" >
-                            신발
-                        </label>
-                        <label for="customerLifestyle">
-                            <input type="checkbox" name="keyword" value="customerLifestyle" id="customerLifestyle" >
-                            소비자라이프스타일
-                        </label>
-
-                        <label for="SDGS">
-                            <input type="checkbox" name="keyword" value="SDGS" id="SDGS">
-                            지속가능성
-                        </label>
-                        <label for="fashionDeck">
-                            <input type="checkbox" name="keyword" value="fashionDeck" id="fashionDeck">
-                            패션데크
-                        </label>
-                        <label for="eCommerce">
-                            <input type="checkbox" name="keyword" value="eCommerce" id="eCommerce" >
-                            이커머스
-                        </label>
-                        <label for="marketAndRetail">
-                            <input type="checkbox" name="keyword" value="marketAndRetail" id="marketAndRetail">
-                            마켓&리테일
-                        </label>
-                        <label for="fashionIndustryStatistics">
-                            <input type="checkbox" name="keyword" value="fashionIndustryStatistics" id="fashionIndustryStatistics" >
-                            섬유패션산업통계
-                        </label>
-
                         <div class = "keyword-guide">
                             1개 이상 선택해 주세요.
                             맞춤형 콘텐츠를 제공 받을 수 있습니다.
@@ -312,18 +304,10 @@
                             이메일 수신
                         </label>
                         <div class="recieve-guide">
-                            이메일 수신 동의시 패션넷 웹진을 보내드립니다.
                             수신 여부는 마이페이지>회원정보 수정에서 변경하실 수 있습니다.
                         </div>
                     </dd>
                 </dl>
-                 <div class="under-provide-points">
-                <b>
-                    500Point
-                </b>
-                웹진(뉴스레터) 수신시 포인터 지급<br>
-                최초 1회에 한함
-                </div>
                 <div class = "line"></div>
                 <div class = "cancel-join">
                     <a href="javascript:void(0)">취소</a>
@@ -332,8 +316,34 @@
             </form>
         </div>
 
-
-        <footer>footer</footer>
+        <footer class="">
+            <div class="mainFooter layoutCenter">
+                <div class="footerLogo">
+                    <h1>LOGO</h1>
+                </div>
+                <div class="footerInfo">
+                    <div class="footerInfoL">
+                        <p>대구광역시 중구 중앙대로 366</p>
+                        <p>임과 함께</p>
+                        <p>admin@gmail.com</p>
+                        <p>053-123-4567</p>
+                    </div>
+                    <div class="footerInfoR">
+                        <ul class="site">
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                            <li><a href="javascript:void(0)">사이트맵</a></li>
+                        </ul>
+                        <ul class="related">
+                            <li><a href="javascript:void(0)">관련기관정보</a></li>
+                        </ul>
+                        <ul class="personInfo">
+                            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                            <li><a href="javascript:void(0)">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
 
