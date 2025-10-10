@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0; }
+        li {list-style: none; }
+        body {font-family: 'Nanum Gothic', sans-serif; width: 1200px; margin: 0 auto; }
+                    
+        .logo {margin: 50px 0; font-size: 30px; text-align: center; font-family: 'Nanum Brush Script', cursive; }
+                    
+        .topMenu {width: 100%; margin-bottom: 20px; text-align: center; height: 40px; }
+        .topMenu:after {content: ""; display: block; clear: both; }
+        .menu01>li {float: left; width: 20%; line-height: 40px; }
+        .menu01 span {font-size: 20px; font-weight: bold; }
+                    
+        .dept01 {display: none; padding: 20px 0; border-bottom: 1px solid #ccc; }
+                    
+        #nop {float: none; }
+    </style>
+</head>
+<body>
+    <div class="logo">
+            <span class="logo">컨텐츠 내용이 밀리는 풀 드롭다운 메뉴</span>
+        </div>
+        <div class="topMenu">
+            <ul class="menu01">
+                <li><span>Menu01</span>
+                    <ul class="dept01">
+                        <li id="nop">sub01</li>
+                        <li id="nop">sub02</li>
+                        <li id="nop">sub03</li>
+                        <li id="nop">sub04</li>
+                        <li id="nop">sub05</li>
+                    </ul>
+                </li>
+                <li><span>Menu02</span>
+                    <ul class="dept01">
+                        <li id="nop">sub01</li>
+                        <li id="nop">sub02</li>
+                        <li id="nop">sub03</li>
+                        <li id="nop">sub04</li>
+                        <li id="nop">sub05</li>
+                    </ul>
+                </li>
+                <li><span>Menu03</span>
+                    <ul class="dept01">
+                        <li id="nop">sub01</li>
+                        <li id="nop">sub02</li>
+                        <li id="nop">sub03</li>
+                        <li id="nop">sub04</li>
+                        <li id="nop">sub05</li>
+                    </ul>
+                </li>
+                <li><span>Menu04</span>
+                    <ul class="dept01">
+                        <li id="nop">sub01</li>
+                        <li id="nop">sub02</li>
+                        <li id="nop">sub03</li>
+                        <li id="nop">sub04</li>
+                        <li id="nop">sub05</li>
+                    </ul>
+                </li>
+                <li><span>Menu05</span>
+                    <ul class="dept01">
+                        <li id="nop">sub01</li>
+                        <li id="nop">sub02</li>
+                        <li id="nop">sub03</li>
+                        <li id="nop">sub04</li>
+                        <li id="nop">sub05</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="none">
+        </div>
+        <script>
+            $(document).on('mouseover', '.topMenu span', function() {
+                $('.dept01').slideDown(300);
+            });
+            $(document).on('mouseover', 'div', function () {
+                if (!$(this).hasClass('topMenu')) {
+                    $('.dept01').slideUp(300);
+                }
+            });
+        </script>
+        
+
+</body>
+</html>

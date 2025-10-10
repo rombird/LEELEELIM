@@ -4,7 +4,7 @@
     margin-top:30px;
 }
 
-/* 검색창 */
+/* 검색창 높이 226px */
 .custom .mainBanner>.mainSearch{
     /* border:1px solid; */
     height:200px;
@@ -144,7 +144,7 @@
     font-family:'nexonBold';
 }
 
-/* area */
+/* area 477px */
 .subMain .subMain1{
     /* background-color: #F0EDE5; */
 }
