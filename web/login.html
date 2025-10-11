@@ -56,12 +56,15 @@
             </div>
 
             <div class="navHeader">
-                <div class="detailnav layoutCenter">
-                    <h1><a href="javascript:void(0)">LOGO</a></h1>
+                <!-- layoutCenter를 줄지 말지 풀드롭다운에 영향 미칠지 확인 -->
+                <div class="detailnav layoutCenter"> 
+                    <h1><a href="/main.html">LOGO</a></h1>
                     <div class="wrap">
                         <ul class="mainNav">
                             <li class="mainList">
-                                <a class=mainMenu href="javascript:void(0)">빅데이터 상권 분석</a>
+                                <div class="listLine">
+                                    <a class=mainMenu href="javascript:void(0)">빅데이터 상권 분석</a>
+                                </div>
                                 <ul class="subNav">
                                     <li class="subList">
                                         <a href="javascript:void(0)">맞춤형정보</a>
@@ -76,7 +79,9 @@
 
                             </li>
                             <li class="mainList">
-                                <a class=mainMenu href="javascript:void(0)">상권시장 TREND</a>
+                                <div class="listLine">
+                                    <a class=mainMenu href="javascript:void(0)">상권시장 TREND</a>
+                                </div>
                                 <ul class="subNav">
                                     <li class="subList">
                                         <a href="javascript:void(0)">Trend NOW</a>
@@ -91,7 +96,9 @@
                             </li>
                             
                             <li class="mainList">
-                                <a class=mainMenu href="javascript:void(0)">소상공인 대시보드</a>
+                                <div class="listLine">
+                                    <a class=mainMenu href="javascript:void(0)">소상공인 대시보드</a>
+                                </div>
                                 <ul class="subNav">
                                     <li class="subList">
                                         <a href="javascript:void(0)">내 가게 경영진단</a>
@@ -105,7 +112,9 @@
                                 </ul>
                             </li>
                             <li class="mainList">
-                                <a class=mainMenu href="javascript:void(0)">이용안내</a>
+                                <div class="listLine">
+                                    <a class=mainMenu href="javascript:void(0)">이용안내</a>
+                                </div>
                                 <ul class="subNav">
                                     <li class="subList">
                                         <a href="javascript:void(0)">공지사항</a>
@@ -126,18 +135,18 @@
                 <h2>로그인</h2>
                 <div class="under-line"></div>
                 <div class="login">
-                    <form method="post" id = "login-form" class = "form">
+                    <form method="post" id="login-form" class="form">
                         <dt>아이디 (이메일)</dt>
-                        <input type="text" name = "userEmail">
+                        <input type="text" name="userEmail">
                         <dt>비밀번호</dt>
-                        <input type="password" name = "userpassword">
-                        <input type="submit" value = "로그인" id = "login-submit" class = "submit-block">
+                        <input type="password" name="userpassword">
+                        <input type="submit" value="로그인" id="login-submit" class="submit-block">
                     </form>
-                    <div class = "tx_btns">
-                        <a class = "login-a-tag" href="./join.html">회원가입</a>
+                    <div class="tx_btns">
+                        <a class="login-a-tag" href="./join.html">회원가입</a>
                         <div>
-                            <a class = "login-a-tag" href="javascript:void(0)">아이디 찾기</a>
-                            <a class = "login-a-tag" href="javascript:void(0)">비밀번호 찾기</a>
+                            <a class="login-a-tag" href="javascript:void(0)">아이디 찾기</a>
+                            <a class="login-a-tag" href="javascript:void(0)">비밀번호 찾기</a>
                         </div>
                     </div>
                 </div>

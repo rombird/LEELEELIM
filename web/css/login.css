@@ -1,13 +1,23 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 
 .sign-in{
     height: 700px;
     display: flex;
     justify-content: center;
+    /* border:1px solid; */
+    flex-grow: 1;
 }
 
 .sign-in>main{
     margin:70px 0;
     width: 500px;
+    /* border:1px solid; */
 }
 
 .sign-in>main>h2{
@@ -23,19 +33,19 @@
     /* 로그인 밑의 줄을 위해 */
     height: 30px;
     margin-bottom: 40px;
-
     border-bottom: 1px solid black;
 }
-
 
 .login{
     /* 아이디(이메일)부터 비밀번호찾기까지의 공간 */
     width: 500px;
 }
+
 .login>.form{
     /* 로그인 폼 있는 공간 */
-
+    /* border:1px solid; */
 }
+
 .form>dt{
     /* 아이디랑 비밀번호 글자 태그 */
     width: 100%;
@@ -73,27 +83,10 @@
 .tx_btns>div{
     display: flex;
     gap: 10px;
-
 }
 
 .login-a-tag{
     /* 회원가입, 아이디 찾기, 비밀번호 찾기의 a태그 */
     word-spacing: -1px;
-    color: black;
     font-family:"nexonRegular";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

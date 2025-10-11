@@ -1,8 +1,32 @@
+@font-face {
+            font-family: 'nexonBold';
+            src: url('./font/NEXONLv1GothicBold.ttf');
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'nexonLight';
+            src: url('./font/NEXONLv1GothicLight.ttf');
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'nexonRegular';
+            src: url('./font/NEXONLv1GothicRegular.ttf');
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'logo';
+            src: url('./font/BitcountGridDouble-SemiBold.ttf');
+            font-style: normal;
+        }
 * {
     box-sizing: border-box;
 }
-
-a {
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus{
     text-decoration: none;
     color: black;
 }
@@ -18,23 +42,16 @@ body {
 }
 
 .layoutCenter{
-    width:1280px;
+    width:1600px;
     margin:0 auto;
 }
 
- /* header width:1444px */
- 
- .custom>.header{
+.custom>.header{
     height:145px;
-    border-bottom: 3px solid #3A6B71;
+    /* border-bottom: 3px solid #3A6B71; */
     box-shadow: 0 4px 3px #bbb;
-    /* background-color:#3A6B71;  */
-    /* #BFCFC9 */
-    /* #3A6B71 */
-    /* 버튼 : #3A6B71 */
-    /* linear-gradient(90deg, #BCCDC3, #8BA69C */
     background-color: white;
-    position:sticky; 
+    /* position:sticky;  */
     top: 0;
     left:0;
     width:100vw;
@@ -67,17 +84,19 @@ body {
 
 /* logo, 메뉴바 -> navHeader */
 .custom .navHeader{
-    /* width:1444px; */
+   
 }
 
 .custom .navHeader>.detailnav {
     display: flex;
-    line-height: 90px;
+    position:relative;
+    height:101px;
+    margin: 0 auto;
+    justify-content:space-between;
+    align-items: center;
+    
 }
 .custom .navHeader>.detailnav>h1{
-    margin:0 30px;
-    line-height: 90px;
-    text-align: center;
     font-style:#3A6B71;
 }
 .custom .navHeader>.detailnav>h1>a{
@@ -88,35 +107,62 @@ body {
 
 .custom .navHeader>.detailnav>.wrap{
     display:flex;
+    position: absolute;
+    /* width: calc(100% - 600px); */
+    left: 300px;
     /* border:1px solid; */
 }
 
 .custom .navHeader>.detailnav>.wrap>.mainNav {
     display: flex;
     justify-content: space-evenly;
-    /* width:1440px; */
-    border:1px solid;
+    /* border:1px solid; */
 }
 
 .custom .navHeader>.detailnav>.wrap>.mainNav>.mainList {
-    border:1px solid;
+    /* border:1px solid; */
     margin:0 20px;
-    position: relative;
+    position: relative; 
     text-align:center;
-    float:left; 
-    /* float 무슨 기능인지 몰겠네 */
+    width: 250px;
+    height:105px;
 }
 
-.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.mainMenu {
-    /* width: 200px; */
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.listLine{
+    /* border:1px solid; */
     margin:0 20px;
-    line-height: 100px;
+    line-height: 105px;
     font-size: 22px;
     font-family:'nexonBold';
 }
+
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.listLine::before{
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s transform ease;
+  transform: scaleX(0); 
+  transform-origin: left;
+  background: #3A6B71;
+}
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.listLine:hover::before{
+  transform: scaleX(1);
+}
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.listLine:hover>.mainMenu{
+    color:#3A6B71;
+    font-weight: bold;
+}
+
+/* mainNav 호버하면 전체 서브메뉴 나옴 */
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList:hover .subNav {
+    display: block;
+}
+
 .custom .navHeader>.detailnav>.wrap>.mainNav>.mainList:nth-child(1){
-    margin-left:30px;
-    /* border:1px solid; */
+    /* margin-left:30px; */
 }
 
 
@@ -124,13 +170,14 @@ body {
     width:100%;
     height:200px;
     position: absolute;
-    top: 100px;
+    top: 100%;
+    /* top:100px 원래 코드 */
     left: 0;
     background-color: white;
     /* opacity:0; */
     display: none;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 0;
+    z-index: 1001;
 }
 .custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.subNav>.subList{
     /* border:1px solid; */
@@ -143,14 +190,9 @@ body {
     padding:0 20px;
     /* line-height:60px; */
     justify-content: center;
+    font-family:"nexonLight";
 }
-.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList:hover>.mainMenu{
-    color:#3A6B71;
-    font-weight: bold;
-}
-.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList:hover .subNav {
-    display: block;
-}
+
 
 
 .custom .navHeader>.detailnav>.wrap>.mainSideNav>.mainList>.login{
@@ -233,4 +275,11 @@ body {
 
 .custom .mainFooter>.footerInfo a{
     font-family:"nexonRegular";
+}
+
+@media screen and (max-width: 1500px) {
+    .detailnav {
+        width: 98%;
+        padding: 0 1%;
+    }
 }
