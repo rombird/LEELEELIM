@@ -42,3 +42,6 @@ https://s4u.daegu.go.kr/user/resource/list.do
 https://bigdata.sbiz.or.kr/#/
 
 게시글 등록페이지 만들기 (파일 업로드 기능, 게시글 등록 눌렀을 시 게시판에 글이 등록되어지고 게시판으로 이동하는 기능까지)
+
+게시글 등록하는 페이지 참조
+https://congsong.tistory.com/57
