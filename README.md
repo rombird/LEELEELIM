@@ -36,3 +36,9 @@ https://daegu.dsz.or.kr/intro/data/search
  
 대구광역시 서비스인구 데이터셋
 https://s4u.daegu.go.kr/user/resource/list.do
+
+### 웹페이지 만들기
+소상공인365 사이트 
+https://bigdata.sbiz.or.kr/#/
+
+게시글 등록페이지 만들기 (파일 업로드 기능, 게시글 등록 눌렀을 시 게시판에 글이 등록되어지고 게시판으로 이동하는 기능까지)
