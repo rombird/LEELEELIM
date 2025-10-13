@@ -33,14 +33,6 @@ https://daegu.dsz.or.kr/intro/data/search
 창업 컨설팅 활용
 → 군집별 특성을 “A그룹은 저녁 매출 비중 ↑ → 음식점 유리”, “B그룹은 특정 업종 매출 ↑ → 서비스업 유리”처럼 해석
 
-
-
-
-
-[전북특별자치도 ‧ 국민연금공단](https://data.nps.or.kr/service/svc/data/search.do?page=1&keyword=G007)
-- 있는 데이터
-  1. 내국인 소비데이터
-  2. 외국인 소비데이터
-  3. 상권분석용 데이터
-  4. 가맹점 휴폐업 데이터 등등
-  5. 배달앱 소비 데이
+ 
+대구광역시 서비스인구 데이터셋
+https://s4u.daegu.go.kr/user/resource/list.do
