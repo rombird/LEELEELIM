@@ -1,32 +1,13 @@
-@font-face {
-            font-family: 'nexonBold';
-            src: url('./font/NEXONLv1GothicBold.ttf');
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'nexonLight';
-            src: url('./font/NEXONLv1GothicLight.ttf');
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'nexonRegular';
-            src: url('./font/NEXONLv1GothicRegular.ttf');
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'logo';
-            src: url('./font/BitcountGridDouble-SemiBold.ttf');
-            font-style: normal;
-        }
 * {
     box-sizing: border-box;
 }
+
 a,
 a:link,
 a:visited,
 a:hover,
 a:active,
-a:focus{
+a:focus {
     text-decoration: none;
     color: black;
 }
@@ -46,8 +27,10 @@ body {
     margin:0 auto;
 }
 
-.custom>.header{
-    height:145px;
+ /* header width:1444px */
+ 
+ .custom>.header{
+    height:155px;
     /* border-bottom: 3px solid #3A6B71; */
     box-shadow: 0 4px 3px #bbb;
     background-color: white;
@@ -60,7 +43,7 @@ body {
     /* 맨 위에 붙어있게 하기 위해 top, left 0 필수 */
  }
 
-/* 로그인, 회원가입 -> topHeader */
+ /* 로그인, 회원가입 -> topHeader */
 .custom>.header>.topHeader{
     height:45px; 
     padding:5px 0;
@@ -112,10 +95,10 @@ body {
     /* border:1px solid; */
 }
 
+
 /* logo, 메뉴바 -> navHeader */
-.custom .navHeader{
-   
-}
+
+/* .custom .navHeader{border:1px solid;} */
 
 .custom .navHeader>.detailnav {
     display: flex;
@@ -124,7 +107,8 @@ body {
     margin: 0 auto;
     justify-content:space-between;
     align-items: center;
-    
+    /* border:1px solid; */
+    height:105px;
 }
 .custom .navHeader>.detailnav>h1{
     font-style:#3A6B71;
@@ -158,11 +142,11 @@ body {
     height:105px;
 }
 
-.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.listLine{
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.listLine {
     /* border:1px solid; */
     margin:0 20px;
     line-height: 105px;
-    font-size: 22px;
+    font-size: 25px;
     font-family:'nexonBold';
 }
 
@@ -207,7 +191,7 @@ body {
     /* opacity:0; */
     display: none;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    z-index: 1001;
+    z-index: 0;
 }
 .custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.subNav>.subList{
     /* border:1px solid; */
