@@ -60,26 +60,56 @@ body {
     /* 맨 위에 붙어있게 하기 위해 top, left 0 필수 */
  }
 
- /* 로그인, 회원가입 -> topHeader */
+/* 로그인, 회원가입 -> topHeader */
 .custom>.header>.topHeader{
-    /* width:1444px; */
     height:45px; 
-    /* 66px / 80px */
-    padding:15px 0;
- }
+    padding:5px 0;
+    margin:10px 0;
+}
+.custom>.header>.topHeader>.topList{
+    /* border:1px solid; */
+}
+
 .custom>.header>.topHeader>.topList>.topNav{
     display:flex;
     justify-content: flex-end;
-    width:250px;
+    width:500px;
     margin-left:auto;
     /* border:1px solid;  */
 }
+
 .custom>.header>.topHeader>.topList>.topNav>.topNavli a{
     font-family:'nexonRegular';
     transition: color 0.3s ease;
     /* border:1px solid; */
-    margin:20px 10px;
-    font-size:20px;
+    font-size:22px;
+    color:black;
+    width:130px;
+    
+}
+.custom>.header>.topHeader>.topList>.topNav>.topNavli>.login{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    text-decoration: none;
+    margin:5px 0;
+}
+.custom>.header>.topHeader>.topList>.topNav>.topNavli .imgLogin{
+    width:25px;
+    height:25px;
+    /* border:1px solid; */
+}
+.custom>.header>.topHeader>.topList>.topNav>.topNavli>.join{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    text-decoration: none;
+    margin:5px 0;
+}
+.custom>.header>.topHeader>.topList>.topNav>.topNavli .imgJoin{
+    width:25px;
+    height:25px;
+    /* border:1px solid; */
 }
 
 /* logo, 메뉴바 -> navHeader */
@@ -215,7 +245,6 @@ body {
     height:240px;
 }
 .custom .mainFooter{
-    /* border:1px solid; */
     padding-top: 20px;
     /* 여기서 마진 잡으면 X */
 }
@@ -236,6 +265,7 @@ body {
    
 }
 .custom .mainFooter>.footerInfo>.footerInfoR{
+    border:1px solid;
     width:500px;
     display:flex;
 }
@@ -277,9 +307,9 @@ body {
     font-family:"nexonRegular";
 }
 
-@media screen and (max-width: 1500px) {
+/* @media screen and (max-width: 1500px) {
     .detailnav {
         width: 98%;
         padding: 0 1%;
     }
-}
+} */

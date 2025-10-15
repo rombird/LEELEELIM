@@ -9,7 +9,7 @@ input::placeholder {
 }
 
 .box{
-    width: 42%;
+    width: 1280px;
     /* border:1px solid; */
 }
 .box>.title{
