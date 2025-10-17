@@ -1,3 +1,7 @@
+
+ <a href="https://stat.mcst.go.kr/portal/duc/ducDetail?boardId=NBRD-1002588&boardType=000312&target=%ED%86%B5%EA%B3%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%ED%99%9C%EC%9A%A9%20%EB%8C%80%ED%9A%8C&page=1&searchText=&orderRowNum=1" target="_blank">[대회]</a>
+
+
 # BIGDATAUI_TEAMPJ
 
 ```
