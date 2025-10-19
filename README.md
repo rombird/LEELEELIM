@@ -17,6 +17,11 @@ https://gostbaducking1.tistory.com/93
 
 ### 문화센터 통계데이터 경진대회 
 
+
+문화공공데이터광장(데이터셋 많음)
+https://www.culture.go.kr/data/main/main.do
+
+
 2024년 데이터 활용대회 보고서
 https://stat.mcst.go.kr/portal/skin/doc.html?fn=FILE-1002702_1735548859819.pdf&rs=/portal/viewer/
 
