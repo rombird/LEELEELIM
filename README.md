@@ -13,7 +13,7 @@ https://www.youtube.com/playlist?list=PLV9zd3otBRt7jmXvwCkmvJ8dH5tR_20c0
 CkEditor 사용방법
 https://gostbaducking1.tistory.com/93
 
-</br>
+</hr>
 
 ### 문화센터 통계데이터 경진대회 
 
