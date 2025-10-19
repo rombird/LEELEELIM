@@ -21,8 +21,28 @@ https://gostbaducking1.tistory.com/93
 문화공공데이터광장(데이터셋 많음)
 https://www.culture.go.kr/data/main/main.do
 
+문화빅데이터 
+https://www.bigdata-culture.kr/bigdata/user/data_market/list.do
 
 2024년 데이터 활용대회 보고서
 https://stat.mcst.go.kr/portal/skin/doc.html?fn=FILE-1002702_1735548859819.pdf&rs=/portal/viewer/
 
 <img width="829" height="812" alt="image" src="https://github.com/user-attachments/assets/8f9cc824-1f9c-490d-a7ff-d16e7aed2e39" />
+
+
+
+국민문화예술조사
+
+
+문화예술교육을 참여하고 있는 자는 참여할 의지가 많다. 비용을 지불할 의지도 있다. 
+참여하고 있지 않은자는 애매하다. 하지만 이들을 한 번 이상 참여시키는 것이 가능하다면 대한민국의 문화예술교육을 듣는 사람은 늘어날것이고 문화수준은 다시 한번 높아지지 않을까?
+
+하지만 듣지 못하는 이유는 
+1. 시간이 없어서
+2. 참여하고 싶은 프로그램이 없어서
+3. 어떤 프로그램이 있는지 정보가 없어서
+
+[시간이 없어서]는 어찌할 수 없지만 빅데이터를 활용하여 사람드이 어떠한 프로그램을 원하는지 그리고 그 프로그램 정보를 쉽게 손에 넣게 하는 게 가능하면 어느 정도 문제 해결이 가능하지 않을까?
+
+EX: 예술교육 데이터 API - 문화공공데이터광장-
+<img width="1277" height="828" alt="image" src="https://github.com/user-attachments/assets/ce073fbd-b6fb-464e-8cf5-6182563f637d" />
