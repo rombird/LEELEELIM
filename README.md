@@ -12,3 +12,11 @@ https://www.youtube.com/playlist?list=PLV9zd3otBRt7jmXvwCkmvJ8dH5tR_20c0
 
 CkEditor 사용방법
 https://gostbaducking1.tistory.com/93
+
+
+### 문화센터 통계데이터 경진대회 
+
+2024년 데이터 활용대회 보고서
+https://stat.mcst.go.kr/portal/skin/doc.html?fn=FILE-1002702_1735548859819.pdf&rs=/portal/viewer/
+
+<img width="829" height="812" alt="image" src="https://github.com/user-attachments/assets/8f9cc824-1f9c-490d-a7ff-d16e7aed2e39" />
