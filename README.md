@@ -4,8 +4,8 @@ https://bigdata.sbiz.or.kr/#/
 
 게시글 등록페이지 만들기 (파일 업로드 기능, 게시글 등록 눌렀을 시 게시판에 글이 등록되어지고 게시판으로 이동하는 기능까지)
 
-게시글 등록하는 페이지 참조
-https://congsong.tistory.com/57
+CRUD관련
+[https://this-circle-jeong.tistory.com/201](https://this-circle-jeong.tistory.com/category/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/CRUD)
 
 게시판, 게시글등록, 페이징처리, 게시글조회, 파일업로드 관련 Youtube 
 https://www.youtube.com/playlist?list=PLV9zd3otBRt7jmXvwCkmvJ8dH5tR_20c0
