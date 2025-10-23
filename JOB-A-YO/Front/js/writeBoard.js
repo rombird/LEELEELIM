@@ -75,10 +75,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 미리보기 표시
     function showPreview(file){
-        const preview = document.createElement("div");
-        preview.className = "preview";
+        // previewContainer가 이미 있는 지 확인
+        let previewContainer = uploadArea.querySelector(".preview-container");
 
-        const fileInfo = document.createElement("div");
+        // previewContainer가 없다면 새로 생성
+        if(!previewContainer){
+            previewContainer = document.createElement("div");
+            previewContainer.className = "preview-container";
+            
+            // 안내문 제거(드래그 해서 파일업로드 가능)
+            const placeholder = uploadArea.querySelector("p");
+            if(placeholder) placeholder.remove();
+            
+            uploadArea.appendChild(previewContainer);
+        }
+        
+        if(previewContainer.children.length > 0){
+            const line = document.createElement("div");
+            line.className = "line-dotted-preview";
+            previewContainer.appendChild(line);
+        }
+
+        // preview-box 생성
+        const previewBox = document.createElement("div");
+        previewBox.className = "preview-box";
+        
+        const previewBoxIn = document.createElement("div");
 
         const fileName = document.createElement("div");
         fileName.className = "file-name";
@@ -88,8 +110,10 @@ document.addEventListener("DOMContentLoaded", function() {
         fileSize.className = "file-size"
         fileSize.textContent = formatBytes(file.size);
 
-        fileInfo.appendChild(fileName);
-        fileInfo.appendChild(fileSize);
+        previewBoxIn.appendChild(fileName);
+        previewBoxIn.appendChild(fileSize);
+
+        // previewBox.appendChild(previewBoxIn);
 
         const deleteBtn = document.createElement("button");
         deleteBtn.className = "delete-btn";
@@ -99,23 +123,25 @@ document.addEventListener("DOMContentLoaded", function() {
         // 삭제버튼 누르면 삭제이벤트
         deleteBtn.addEventListener("click", () => {
             uploadedFiles = uploadedFiles.filter(f => !(f.name === file.name && f.size === file.size));
-            preview.remove();
+            
+            const prevLine = previewBox.previousElementSibling;
+            if(prevLine && prevLine.classList.contains("line-dotted-preview")){
+                prevLine.remove();
+            }
+            previewBox.remove();
 
             // 업로드 된 파일이 없다면 안내문(파일 드래그 가능) 다시 표시
             if(uploadedFiles.length === 0){
+                previewContainer.remove();
                 showPlaceholder();
             }
         });
 
         
 
-        // 안내문 제거(처음 추가 시)
-        const placeholder = uploadArea.querySelector("p");
-        if(placeholder) placeholder.remove();
-
-        preview.appendChild(fileInfo);
-        preview.appendChild(deleteBtn);
-        uploadArea.appendChild(preview);
+        previewBox.appendChild(previewBoxIn);
+        previewBox.appendChild(deleteBtn);
+        previewContainer.appendChild(previewBox)
     }
 
     // 파일 크기 표시 함수

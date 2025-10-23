@@ -162,7 +162,14 @@
     border: 1px solid rgb(202, 197, 197);
 }
 
+.line-dotted-preview{
+    /* 업로드된 파일 사이사이 점선 */
+    border: 1px dotted black;
+}
+
 .under-line-dotted{
+    /* 내용과 첨부파일 사이 */
+
     margin-bottom: 2em;
     margin-top: 1px;
 }
@@ -213,8 +220,10 @@
 .upload{
     /* 드래그해서 놓을 곳 */
 
+
+
     min-height: 60px;
-    border: 1px solid rgb(202, 197, 197);
+    border: 1px dashed rgb(202, 197, 197);
 
     display: flex;
     align-items: center;
@@ -224,23 +233,35 @@
 }
 
 #upload.dragover{
-    
+ 
+    border-color: #3A6B71;
+    background-color: #f0f9f8;
+    color: #3A6B71;
+
 }
 
-.preview{
+.preview-container{
     /* 파일 업로드 되면 추가 될 노드가 들어올 공간 */
 
     /* background-color: pink; */
     
     width: 100%;
 
-    display: flex;
+    /* display: flex; */
 
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 1.2em;
+    padding: 1.6em;
     
+    
+}
+
+.preview-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* background-color: #4d072d; */
+
+    margin: 20px 10px;
 }
 
 .file-name{
