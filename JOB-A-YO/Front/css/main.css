@@ -1,0 +1,579 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layoutCenter{
+    width:1600px;
+    margin:0 auto;
+}
+
+ /* header width:1444px */
+ 
+ .custom>.header{
+    height:145px;
+    /* border-bottom: 3px solid #3A6B71; */
+    box-shadow: 0 4px 3px #bbb;
+    background-color: white;
+    position:sticky; 
+    top: 0;
+    left:0;
+    width:100vw;
+    /* border:1px solid; */
+    z-index: 1000;
+    /* 맨 위에 붙어있게 하기 위해 top, left 0 필수 */
+ }
+
+ /* 로그인, 회원가입 -> topHeader */
+.custom>.header>.topHeader{
+    /* width:1444px; */
+    height:45px; 
+    /* 66px / 80px */
+    padding:15px 0;
+ }
+.custom>.header>.topHeader>.topList>.topNav{
+    display:flex;
+    justify-content: flex-end;
+    width:250px;
+    margin-left:auto;
+    /* border:1px solid;  */
+}
+.custom>.header>.topHeader>.topList>.topNav>.topNavli a{
+    font-family:'nexonRegular';
+    transition: color 0.3s ease;
+    /* border:1px solid; */
+    margin:20px 10px;
+    font-size:20px;
+}
+
+/* logo, 메뉴바 -> navHeader */
+.custom .navHeader{
+   
+}
+
+.custom .navHeader>.detailnav {
+    display: flex;
+    position:relative;
+    height:101px;
+    margin: 0 auto;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.custom .navHeader>.detailnav>h1{
+    font-style:#3A6B71;
+}
+.custom .navHeader>.detailnav>h1>a{
+    font-family:'logo';
+    color:#3A6B71;
+    font-size:60px;
+}
+
+.custom .navHeader>.detailnav>.wrap{
+    display:flex;
+    position: absolute;
+    /* width: calc(100% - 600px); */
+    left: 300px;
+    /* border:1px solid; */
+}
+
+.custom .navHeader>.detailnav>.wrap>.mainNav {
+    display: flex;
+    justify-content: space-evenly;
+    /* border:1px solid; */
+}
+
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList {
+    /* border:1px solid; */
+    margin:0 20px;
+    position: relative; 
+    text-align:center;
+    width: 250px;
+    height:105px;
+}
+
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.listLine {
+    /* border:1px solid; */
+    margin:0 20px;
+    line-height: 105px;
+    font-size: 22px;
+    font-family:'nexonBold';
+}
+
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.listLine::before{
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s transform ease;
+  transform: scaleX(0); 
+  transform-origin: left;
+  background: #3A6B71;
+}
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.listLine:hover::before{
+  transform: scaleX(1);
+}
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.listLine:hover>.mainMenu{
+    color:#3A6B71;
+    font-weight: bold;
+}
+
+/* mainNav 호버하면 전체 서브메뉴 나옴 */
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList:hover .subNav {
+    display: block;
+}
+
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList:nth-child(1){
+    /* margin-left:30px; */
+}
+
+
+.navHeader>.detailnav>.wrap>.mainNav>.mainList>.subNav {
+    width:100%;
+    height:200px;
+    position: absolute;
+    top: 100%;
+    /* top:100px 원래 코드 */
+    left: 0;
+    background-color: white;
+    /* opacity:0; */
+    display: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 0;
+}
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.subNav>.subList{
+    /* border:1px solid; */
+    height:60px;
+}
+.custom .navHeader>.detailnav>.wrap>.mainNav>.mainList>.subNav>.subList>a{
+    display:flex;
+    height: 100%; 
+    align-items: center;
+    padding:0 20px;
+    /* line-height:60px; */
+    justify-content: center;
+    font-family:"nexonLight";
+}
+
+
+
+.custom .navHeader>.detailnav>.wrap>.mainSideNav>.mainList>.login{
+    line-height: 100px;
+}
+.custom .navHeader>.detailnav>.wrap>.mainSideNav>.mainList>.login>.imgLogin{
+    margin-right:5px;
+    height:21px;
+}
+.custom .navHeader>.detailnav>.wrap>.mainSideNav>.mainList>.join{
+    line-height: 100px;
+}
+
+
+
+/* footer */
+.custom>footer{
+    background-color:rgba(0,0,0,0.1);
+    /* #3a6b7113 */
+    height:240px;
+}
+.custom .mainFooter{
+    /* border:1px solid; */
+    padding-top: 20px;
+    /* 여기서 마진 잡으면 X */
+}
+.custom .mainFooter>.footerLogo>h1{
+    margin:20px 30px;
+    font-family:'logo';
+}
+.custom .mainFooter>.footerInfo{
+    display:flex;
+}
+.custom .mainFooter>.footerInfo>.footerInfoL{
+    margin-left:30px;
+}
+.custom .mainFooter>.footerInfo>.footerInfoL>p{
+    width:700px;
+    padding:0;
+    margin:0 90px 0 0;
+   
+}
+.custom .mainFooter>.footerInfo>.footerInfoR{
+    width:500px;
+    display:flex;
+}
+.custom .mainFooter>.footerInfo>.footerInfoR>.site{
+    border-right:1px solid lightgray;
+    width:120px;
+}
+.custom .mainFooter>.footerInfo>.footerInfoR>.site a{
+    padding:10px;
+}
+.custom .mainFooter>.footerInfo>.footerInfoR li{
+    margin:10px;
+}
+.custom .mainFooter>.footerInfo>.footerInfoR a{
+    /* margin:0px; */
+}
+.custom .mainFooter>.footerInfo>.footerInfoR>.related{
+    border-right:1px solid lightgray;
+    width:140px;
+}
+.custom .mainFooter>.footerInfo>.footerInfoR>.related a{
+    padding:10px;
+}
+
+
+.custom .mainFooter>.footerInfo>.footerInfoR>.personInfo{
+    width:210px;
+}
+.custom .mainFooter>.footerInfo>.footerInfoR>.personInfo a{
+    padding:10px;
+}
+
+/* footer font */
+.custom .mainFooter>.footerInfo p{
+    font-family:"nexonRegular";
+}
+
+.custom .mainFooter>.footerInfo a{
+    font-family:"nexonRegular";
+}
+
+
+@media screen and (max-width: 1500px) {
+    .detailnav {
+        width: 98%;
+        padding: 0 1%;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+/* mainPage */
+.custom .mainBanner{
+    height:680px;
+    border:1px solid;
+    margin-top:30px;
+}
+
+/* 검색창 높이 226px */
+.custom .mainBanner>.mainSearch{
+    /* border:1px solid; */
+    height:200px;
+}
+.custom .mainBanner>.mainSearch>.searchBox>.search{
+    margin:5px;
+    width:1240px;
+    height:77px;
+    border-radius: 100px;
+    text-align: left;    
+    border: 3px solid #3A6B71;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .18);
+    position: relative;
+    line-height:50px;
+}
+.custom .mainBanner>.mainSearch>.searchBox>.search>select{
+    width: 130px;
+    border: none;
+    /* box-sizing: border-box; */
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: 100% 50%;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: 100% 50%;
+    margin:20px 50px;
+}
+
+.custom .mainBanner>.mainSearch>.searchBox>.search>#title{
+    border:none;
+    width: 800px;
+    height: 40px;
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: left;
+    padding: 3px 10px;
+    /* box-sizing: border-box; */
+}
+.custom .mainBanner>.mainSearch>.searchBox>.search>#searchBtn{
+    /* position: absolute; */
+    /* top: 50%;
+    right: 15px; */
+    width: 60px;
+    height: 40px;
+    border: 0;
+    font-size:0;
+    vertical-align: middle;
+    /* opacity: .9; */
+    /* z-index: 5; */
+    background-color:white;
+    /* line-height:35px; */
+    margin-left:120px;
+    justify-content: center;
+    align-items: center;
+}
+.custom .mainBanner>.mainSearch>.searchBox>.search>#searchBtn>img{
+    width:40px;
+    height:40px;
+    filter: opacity(0.5) drop-shadow(0 0 0 #fff);
+    display:block;
+}
+
+.custom .mainBanner>.mainSearch>.searchBox>.searchKey{
+    
+}
+
+.custom .mainBanner>.mainSearch>.searchBox>.searchKey>.keyList{
+    display:flex;
+    /* border:1px solid; */
+    margin:25px 380px;
+    
+}
+
+.custom .mainBanner>.mainSearch>.searchBox>.searchKey>.keyList a{
+    /* border:1px solid; */
+    border-radius:50px;
+    margin:20px 5px;
+    padding:8px;
+    background-color:#3A6B71;
+    color:white;
+}
+
+/* 핫플레이스 mainLayout */
+.custom .mainBanner>.mainLayout{
+    background-color: #3A6B71;
+    border-radius:20px;
+    height:470px;
+    /* border:1px solid; */
+    display:flex;
+    /* margin:0 20px; */
+}
+.custom .mainBanner>.mainLayout>.mainLeft{
+    width:600px;
+    height:450px;
+    /* border:1px solid; */
+    margin:10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+}
+.custom .mainBanner>.mainLayout>.mainLeft>.leftList{
+    height:30px;
+    margin:10px;
+    font-size:20px;
+    display:flex;
+}
+.custom .mainBanner>.mainLayout>.mainLeft>.leftList p{
+    font-family:'nexonBold';
+    font-size:25px;
+}
+
+.custom .mainBanner>.mainLayout>.mainLeft>.leftCategory{
+    display: flex;
+    flex-wrap: wrap; /* 줄바꿈 허용 */
+}
+.custom .mainBanner>.mainLayout>.mainLeft>.leftCategory>li{
+    margin:20px 0;
+    height:150px;
+    width: 25%; /* 4개니까 100% ÷ 4 = 25% */
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* 보기 편하게 테두리 */
+    text-align:center;
+    padding: 10px 0;
+}
+.custom .mainBanner>.mainLayout>.mainRight{
+    width:600px;
+    height:450px;
+    margin:10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+}
+
+/* subMain */
+.custom .subMain h2{
+    margin:20px 0 0 30px;
+    font-family:'nexonBold';
+}
+
+/* area 477px */
+.subMain .subMain1{
+    
+}
+.subMain .area{
+    height:635px;
+    border:1px solid;
+}
+.subMain .area>.areaContent{
+    display:flex;
+    margin:25px 20px 0 20px;
+    /* border:1px solid; */
+    height:530px;
+}
+.subMain .area>.areaContent>.wcl{
+    width:500px;
+    margin:20px 10px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+}
+.subMain .area>.areaContent>.wcr{
+    width:500px;
+    margin:20px 10px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+}
+
+/* issue */
+.subMain .issue{
+    /* height:500px; */
+    border:1px solid #f6f7f9;
+    border-radius:20px;
+    background-color:#f6f7f9;
+}
+.subMain .issue>h2{
+    margin:20px;
+    text-align:center;
+}
+.subMain .issue>.issueBoxes{
+    margin:20px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+  appearance: none;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  margin: 20px;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px #3A6B71 inset;
+    color:white;
+    outline: 0;
+  }
+  &:focus {
+    color: #3A6B71;
+    outline: 0;
+  }
+}
+
+.subMain .issue>.issueBoxes>#box{
+    /* border:1px solid; */
+    width:300px;
+    border-radius:8px;
+    overflow:hidden;
+    margin:20px;
+    transition: all 0.3s cubic-bezier(0.42, 0.0, 0.58, 1.0);
+}
+.subMain .issue>.issueBoxes>#box:hover{
+    box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform:translateY(-10px);
+}
+.subMain .issue>.issueBoxes>#box *{
+    padding:10px;
+}
+.subMain .issue>.issueBoxes>#box .img{
+    display:block;
+    width:100%;
+    height:200px;
+    padding:0;
+}
+.subMain .issue>.issueBoxes>#box h1{
+    font-family:"nexonBold";
+    font-size:25px;
+}
+.subMain .issue>.issueBoxes>#box .data{
+    font-family:"nexonLight";
+    font-size:20px;
+}
+.subMain .issue>.issueBoxes>#box .text{
+    font-family:"nexonLight";
+    font-size:20px;
+}
+
+.subMain .issue>.issueEnd{
+    height:55px;
+    background-color:#3A6B71;
+    border:1px solid #f6f7f9;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+/* trend */
+.subMain .subMain3{
+    /* background-color: #F0EDE5 ; */
+    /* #AB9C81 F3F0E9 #517C63 #E7DFCF #F0EDE5 */
+    
+}
+.subMain .trend{
+    height:600px;
+    /* border:1px solid; */
+}
+
+.subMain .trend>.trendContent{
+    display:flex;
+    /* border:1px solid; */
+}
+.subMain .trend>.trendContent>.trendTitle{
+    height:50px;
+    text-align: center;
+    margin:20px 70px 0 20px;
+}
+.subMain .trend>.trendContent>.trendBox{
+    display:flex;
+}
+.subMain .trend>.trendContent>.trendBox>.trendGraph{
+    margin:25px 20px 0 20px;
+    width:450px;
+    height:530px;
+    background-color:rgb(234, 234, 234);
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+}
+.subMain .trend>.trendContent>.trendBox>.trendChart{
+    width:450px;
+    height:530px;
+    background-color:rgb(234, 234, 234);
+    margin:20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+}
+/* board */
+.subMain .board{
+    height:466px;
+}
+
+.subMain .board>.boardInfo>.boardTable{
+    margin:20px;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+}

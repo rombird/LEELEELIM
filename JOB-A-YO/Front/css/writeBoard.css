@@ -1,0 +1,294 @@
+.sub-title{
+    /* 문의사항이나 아이콘이나 이용안내>공지사항>.... 이 들어있는 곳 */
+
+    /* background-color: red; */
+
+    height: 60px;
+
+    display: flex;
+
+    margin-top: 30px;
+
+    position: relative;
+    
+}
+
+.inquiry{
+    /* 왼쪽의 문의사항과 아이콘이 들어있는 곳 */
+    
+    width: 84%;
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+.question-mark-container{
+
+    margin: 0 5px;
+    
+}
+
+.question-mark{
+    /* ?, 별 아이콘,  */
+    
+    color: white;
+    background-color: #3A6B71;
+
+    width: 33px;
+    height: 33px;
+
+    line-height: 32px;
+    text-align: center;
+    
+    margin-top: 2px;
+
+    border-radius: 50%;
+
+}
+
+
+.question-mark-hidden{
+    /* ?아이콘에 마우스 호버시 보여줄 텍스트 문의사항 */
+    background-color: #444444;
+
+    color: white;
+    font-weight: bold;
+
+    margin-top: 10px;
+
+    padding: 7px;
+
+    border-radius: 4%;
+
+    display: none;
+
+    position:absolute;
+
+    
+}
+
+.question-mark:hover{
+    cursor: pointer;
+}
+
+.question-mark:hover + .question-mark-hidden{
+    /* ? 아이콘 호버시 보여주기 위한 css */
+
+    display: block;
+
+}
+
+.path{
+    /* 게시판 등록의 경로를 표시해주는 부분(이용안내 > 공지사항 > 문의사항) */
+    position: absolute;
+    right: 0;
+
+    gap: 7px;
+
+    margin-top: 7px;
+
+    display: flex;
+
+    font: 10px;
+
+}
+
+.inquiry-right-side:hover{
+    /* 문의사항애 마우스 갖다대면 파란색 */
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+.write-space{
+    /* 제목부터 첨부파일까지 등록작업관련 전부다 */
+
+    border-top: 2.5px solid black;
+}
+
+.label-and-writeArea{
+    /* 제목과 내용을 포함하고 있는 한 줄 에리어 */
+
+    display: flex;
+    align-items: stretch;
+
+    gap: 20px;
+
+    /* padding: 10px; */
+}
+
+.label-area{
+    /* 왼쪽의 라벨 Area */
+
+    background-color: #f4f5f7;
+
+    display: flex;
+
+    width: 140px;
+
+    line-height: 60px;
+
+    justify-content: center;
+    
+    gap: 5px;
+}
+
+.write-area{
+    /* 오른쪽의 내용입력 Area */
+
+    /* background-color: antiquewhite; */
+
+    flex: 1;
+
+    padding: 10px 0 ;
+
+    min-height: 60px;
+}
+
+.write-input{
+    /* 내용입력 칸 */
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid rgb(202, 197, 197);
+}
+
+.under-line-dotted{
+    margin-bottom: 2em;
+    margin-top: 1px;
+}
+
+.line-dotted{
+    /* 제목과 내용 사이의 점선 */
+
+    border-top: 1px dotted rgb(202, 197, 197);
+}
+
+.file-upload-info{
+    /* 용량제한: ...... 부터 파일선택버튼있는 곳까지 있는 컨테이너 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #f4f5f7;
+
+    border: 1px solid rgb(202, 197, 197);
+
+    /* height: 55px; */
+    padding: 10px;
+    gap: 2px;
+
+    font-size: 13px;
+}
+
+
+.file-upload-btn{
+    /* 파일 선택 버튼 input태그 */
+    display: none;
+}
+
+.upload-btn{
+    /* 파일 선택 input태그 대신에 보여줄거 */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #3A6B71;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.upload{
+    /* 드래그해서 놓을 곳 */
+
+    min-height: 60px;
+    border: 1px solid rgb(202, 197, 197);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+}
+
+#upload.dragover{
+    
+}
+
+.preview{
+    /* 파일 업로드 되면 추가 될 노드가 들어올 공간 */
+
+    /* background-color: pink; */
+    
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.2em;
+    
+}
+
+.file-name{
+    /* 파일 이름 */
+
+    color: #1240AF;
+    font-size: 14px;
+    margin-bottom: 5px;
+
+}
+
+.file-size{
+    /* 파일 사이즈 */
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.delete-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #3A6B71;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+.submit-btn-group{
+    /* 제출버튼 목록버튼 있는 컨테이너 */
+    
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-direction: row-reverse;
+
+    margin-bottom: 30px;
+}
+
+.submit-btn{
+    /* 제출 버튼 input태그 */
+    display: none;
+}
+
+
